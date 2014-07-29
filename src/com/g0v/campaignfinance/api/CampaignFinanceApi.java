@@ -77,14 +77,16 @@ public class CampaignFinanceApi
 
 	/**
 	 * Can't recognize the answer > don't input the answer.
+	 * Request URL:http://campaign-finance.g0v.ctiml.tw/api/reportunclear/5048/12/4
 	 *
 	 * @param cell
 	 * @return
 	 * @throws IOException
 	 */
-	public boolean fillCellNotClear(Cell cell) throws IOException
+	public boolean reportUnclear(Cell cell) throws IOException
 	{
-		String url = API_URL + "fillcell/" + cell.getPage() + "/" + cell.getX() + "/" + cell.getY();
+
+		String url = API_URL + "reportunclear/" + cell.getPage() + "/" + cell.getX() + "/" + cell.getY();
 
 		return jsoupPost(url);
 	}

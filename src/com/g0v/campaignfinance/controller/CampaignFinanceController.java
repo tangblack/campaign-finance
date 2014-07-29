@@ -214,7 +214,7 @@ public class CampaignFinanceController
 				{
 					try
 					{
-						api.fillCellNotClear(cell);
+						api.reportUnclear(cell);
 					}
 					catch (IOException e)
 					{
