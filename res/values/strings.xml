@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">政治獻金數位化</string>
+
+    <string name="current_progress">目前進度：</string>
+    <string name="share">號召網友 鍵盤護國</string>
+
+    <string name="network_error">哎呦！沒法連上主機啦！\n請確認網路狀況後重開 APP</string>
+
+    <string name="current_answer">目前答案：</string>
+    <string name="is_right">這答案沒錯</string>
+    <string name="ignore">跳過這題</string>
+    <string name="quick_input">快速輸入</string>
+    <string name="input">手動輸入</string>
+    <string name="not_clear">圖片不清楚</string>
+    <string name="is_empty">這是空白</string>
+
+    <string name="send">送出</string>
+    <string name="cancel">取消</string>
+
+    <string name="quick_input_item_1">是</string>
+    <string name="quick_input_item_2">匿名</string>
+    <string name="quick_input_item_3">匿名捐贈</string>
+    <string name="quick_input_item_4">個人捐贈收入</string>
+    <string name="quick_input_item_5">交通旅運支出</string>
+    <string name="quick_input_item_6">人事費用支出</string>
+    <string name="quick_input_item_7">人民團體捐贈收入</string>
+    <string name="quick_input_item_8">租用宣傳車輛支出</string>
+    <string name="quick_input_item_9">營利事業捐贈收入</string>
+    <string name="quick_input_item_10">公共關係費用支出</string>
+    <string name="quick_input_item_11">雜支支出</string>
+    <string name="quick_input_item_12">宣傳支出</string>
+    <string name="quick_input_item_13">集會支出</string>
+
+    <string name="share_subject">政治獻金數位化 等你來破解</string>
+    <string name="share_body">政治獻金數位化
+        \n等你來破解
+        \n
+        \n網頁版：http://campaign-finance.g0v.ctiml.tw/
+        \n
+        \nAndroid 版：https://play.google.com/store/apps/details?id=com.g0v.campaignfinance</string>
+    <string name="share_subject_with_todo">政治獻金數位化 還有 %1$s 筆資料等你來破解</string>
+    <string name="share_body_with_todo">政治獻金數位化
+        \n還有 %1$s 筆資料等你來破解
+        \n
+        \n網頁版：http://campaign-finance.g0v.ctiml.tw/
+        \n
+        \nAndroid 版：https://play.google.com/store/apps/details?id=com.g0v.campaignfinance</string>
+    <string name="share_chooser_title">號召網友 鍵盤護國</string>
+
+
+    <string name="new_task_notification_ticker">有新的關卡上線了</string>
+    <string name="new_task_notification_content_title">有新的關卡上線了</string>
+    <string name="new_task_notification_content_text">有 %1$s 筆資料等你來破解</string>
+</resources>
