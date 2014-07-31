@@ -10,9 +10,30 @@
             android:layout_height="50dp"
             android:id="@+id/inputDialogDataImageView"
             android:layout_gravity="center_horizontal" android:paddingTop="10dp"/>
-    <EditText
-            android:layout_width="match_parent"
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputDialogDataEditText"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_weight="9"
+                android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/clearImageButton"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearImageButton"
+                android:background="@android:drawable/ic_menu_close_clear_cancel" android:layout_weight="1"
+                android:layout_alignBottom="@+id/inputDialogDataEditText" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/inputDialogDataEditText"
-            android:layout_gravity="center_horizontal" android:maxLines="1"/>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/inut_dialog_hint"
+            android:id="@+id/textView" android:paddingLeft="5dp" android:paddingBottom="10dp"/>
 </LinearLayout>

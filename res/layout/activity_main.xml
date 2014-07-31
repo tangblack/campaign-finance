@@ -29,8 +29,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/current_answer"
-                android:id="@+id/currentAnswerTextView"/>
+                android:id="@+id/currentAnswerTextView" android:paddingLeft="5dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -81,6 +82,12 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/link_to_fan_page"
+                android:id="@+id/linkToFanPageTextView" android:gravity="right" android:paddingRight="5dp"/>
     </LinearLayout>
 </LinearLayout>
 

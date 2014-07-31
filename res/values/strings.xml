@@ -14,23 +14,26 @@
     <string name="input">手動輸入</string>
     <string name="not_clear">圖片不清楚</string>
     <string name="is_empty">這是空白</string>
+    <string name="link_to_fan_page">關於APP的問題請至<a href="https://www.facebook.com/pages/%E6%94%BF%E6%B2%BB%E7%8D%BB%E9%87%91%E6%95%B8%E4%BD%8D%E5%8C%96-Android-APP/626436167476957">臉書</a>留言</string>
 
+    <string name="inut_dialog_hint">提示: 程式會自動替數字補齊逗號. (1000->1,000)</string>
     <string name="send">送出</string>
     <string name="cancel">取消</string>
 
     <string name="quick_input_item_1">是</string>
-    <string name="quick_input_item_2">匿名</string>
-    <string name="quick_input_item_3">匿名捐贈</string>
-    <string name="quick_input_item_4">個人捐贈收入</string>
-    <string name="quick_input_item_5">交通旅運支出</string>
-    <string name="quick_input_item_6">人事費用支出</string>
-    <string name="quick_input_item_7">人民團體捐贈收入</string>
-    <string name="quick_input_item_8">租用宣傳車輛支出</string>
-    <string name="quick_input_item_9">營利事業捐贈收入</string>
-    <string name="quick_input_item_10">公共關係費用支出</string>
-    <string name="quick_input_item_11">雜支支出</string>
-    <string name="quick_input_item_12">宣傳支出</string>
-    <string name="quick_input_item_13">集會支出</string>
+    <string name="quick_input_item_2">****</string>
+    <string name="quick_input_item_3">匿名</string>
+    <string name="quick_input_item_4">雜支支出</string>
+    <string name="quick_input_item_5">宣傳支出</string>
+    <string name="quick_input_item_6">集會支出</string>
+    <string name="quick_input_item_7">匿名捐贈</string>
+    <string name="quick_input_item_8">個人捐贈收入</string>
+    <string name="quick_input_item_9">交通旅運支出</string>
+    <string name="quick_input_item_10">人事費用支出</string>
+    <string name="quick_input_item_11">人民團體捐贈收入</string>
+    <string name="quick_input_item_12">租用宣傳車輛支出</string>
+    <string name="quick_input_item_13">營利事業捐贈收入</string>
+    <string name="quick_input_item_14">公共關係費用支出</string>
 
     <string name="share_subject">政治獻金數位化 等你來破解</string>
     <string name="share_body">政治獻金數位化

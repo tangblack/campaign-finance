@@ -4,24 +4,32 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import com.g0v.campaignfinance.controller.CampaignFinanceController;
+import com.g0v.campaignfinance.controller.OcrController;
 import com.g0v.campaignfinance.model.Cell;
 import com.g0v.campaignfinance.model.CellCount;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends Activity
 {
 	private static final String TAG = MainActivity.class.getSimpleName();
+	private static final Pattern PATTERN_ONLY_NUMBER = Pattern.compile("^(\\d+)$"); // ^(\d+)$
+	private static final NumberFormat FORMAT_MONEY = new DecimalFormat("#,###,###");
 
 	private ProgressBar progressBar;
 	private ImageView dataImageView;
@@ -32,6 +40,7 @@ public class MainActivity extends Activity
 	private Button inputButton;
 	private Button notClearButton;
 	private Button ignoreButton;
+	private TextView linkToFanPageTextView;
 	private ArrayAdapter<String> quickInputItemArrayAdapter;
 	private MenuItem shareMenuItem;
 
@@ -42,10 +51,13 @@ public class MainActivity extends Activity
 	private CampaignFinanceController campaignFinanceController;
 	private Cell cell;
 	private CellCount cellCount;
-	private Drawable dataImage;
+	private Bitmap dataBitmap;
 
 	private long pollCellCount = 0;
 	private long playCoinSoundCount = 0;
+
+	private OcrController ocrController;
+
 
 	/**
 	 * Called when the activity is first created.
@@ -64,6 +76,8 @@ public class MainActivity extends Activity
 		{
 			e.printStackTrace();
 		}
+
+		ocrController = new OcrController(getApplicationContext());
 
 		quickInputItemArrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.select_dialog_singlechoice);
 		quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_1));
@@ -128,7 +142,8 @@ public class MainActivity extends Activity
 			@Override
 			public void onClick(View v)
 			{
-				popupInputDialog();
+				//TODO Open task to do OCR.
+				new PopupInputDialogTask().execute();
 			}
 		});
 
@@ -156,6 +171,9 @@ public class MainActivity extends Activity
 				MainActivity.this.doNextWork();
 			}
 		});
+
+		linkToFanPageTextView = (TextView)findViewById(R.id.linkToFanPageTextView);
+		linkToFanPageTextView.setMovementMethod(LinkMovementMethod.getInstance());
 
 		doNextWork();
 	}
@@ -213,7 +231,7 @@ public class MainActivity extends Activity
 		quickInputDialogBuilder.setView(quickInputDialogView);
 
 		ImageView imageView = (ImageView) quickInputDialogView.findViewById(R.id.quickInputDialogDataImageView);
-		imageView.setImageDrawable(dataImage);
+		imageView.setImageBitmap(dataBitmap);
 
 		quickInputDialogBuilder.setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener()
 		{
@@ -240,6 +258,8 @@ public class MainActivity extends Activity
 			quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_10));
 			quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_11));
 			quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_12));
+			quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_13));
+			quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_14));
 		}
 		ListView itemListView = (ListView) quickInputDialogView.findViewById(R.id.quickInputDialogItemlistView);
 		itemListView.setAdapter(quickInputItemArrayAdapter);
@@ -266,7 +286,7 @@ public class MainActivity extends Activity
 	 *
 	 * @see <a href="http://stackoverflow.com/questions/2403632/android-show-soft-keyboard-automatically-when-focus-is-on-an-edittext">Android: show soft keyboard automatically when focus is on an EditText</a>
 	 */
-	private void popupInputDialog()
+	private void popupInputDialog(String defaultAnswer)
 	{
 		final AlertDialog.Builder inputDialogBuilder = new AlertDialog.Builder(this);
 //		inputDialogBuilder.setTitle(getString(R.string.input));
@@ -276,11 +296,18 @@ public class MainActivity extends Activity
 		inputDialogBuilder.setView(inputDialogView);
 		final EditText editText = (EditText) inputDialogView.findViewById(R.id.inputDialogDataEditText);
 		ImageView imageView = (ImageView) inputDialogView.findViewById(R.id.inputDialogDataImageView);
-		imageView.setImageDrawable(dataImage);
+//		imageView.setImageDrawable(dataImage);
+		imageView.setImageBitmap(dataBitmap);
 
-//		final EditText editText = new EditText(this);
-//		editText.setMaxLines(1);
-//		inputDialogBuilder.setView(editText);
+		ImageButton clearImageButton = (ImageButton) inputDialogView.findViewById(R.id.clearImageButton);
+		clearImageButton.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				editText.setText("");
+			}
+		});
 
 		inputDialogBuilder.setPositiveButton(getResources().getString(R.string.send), new DialogInterface.OnClickListener()
 		{
@@ -315,11 +342,8 @@ public class MainActivity extends Activity
 			}
 		});
 
-		if (cell != null && cell.getAns() != null)
-		{
-			editText.setText(cell.getAns());
-			editText.setSelection(cell.getAns().length());
-		}
+		editText.setText(defaultAnswer);
+		editText.setSelection(defaultAnswer.length());
 
 		inputDialog.setOnShowListener(new DialogInterface.OnShowListener()
 		{
@@ -334,7 +358,13 @@ public class MainActivity extends Activity
 					{
 						playCoinSound();
 
-						String inputString = editText.getText().toString();
+						String inputString = editText.getText().toString().trim();
+						if (isOnlyNumber(inputString))
+						{
+							long inputNumber = Long.valueOf(inputString).longValue();
+							inputString = FORMAT_MONEY.format(inputNumber);
+						}
+
 						logDebug("You send " + inputString);
 						campaignFinanceController.openThreadToFillCell(cell, inputString);
 						MainActivity.this.doNextWork();
@@ -344,6 +374,12 @@ public class MainActivity extends Activity
 			}
 		});
 		inputDialog.show();
+	}
+
+	private boolean isOnlyNumber(String inputStr)
+	{
+		Matcher matcher = PATTERN_ONLY_NUMBER.matcher(inputStr);
+		return matcher.find();
 	}
 
 	private void logDebug(String message)
@@ -443,12 +479,8 @@ public class MainActivity extends Activity
 			progressBar.setVisibility(View.VISIBLE);
 
 			currentAnswerTextView.setText(getString(R.string.current_answer));
-			isRightButton.setEnabled(false);
-			isEmptyButton.setEnabled(false);
-			quickInputButton.setEnabled(false);
-			inputButton.setEnabled(false);
-			notClearButton.setEnabled(false);
-			ignoreButton.setEnabled(false);
+
+			setUiEnaled(false);
 		}
 
 		@Override
@@ -458,14 +490,14 @@ public class MainActivity extends Activity
 			{
 				cell = campaignFinanceController.poolCell();
 				logDebug("cell=" + cell);
-				dataImage = null;
+				dataBitmap = null;
 
-				while (cell.getImgDrawable() == null)
+				while (cell.getBitmap() == null)
 				{
 					Thread.sleep(2000);
 				}
 
-				dataImage = cell.getImgDrawable();
+				dataBitmap = cell.getBitmap();
 			}
 			catch (MalformedURLException e)
 			{
@@ -498,24 +530,16 @@ public class MainActivity extends Activity
 				finish();
 			}
 
-			if (dataImage != null)
+			if (dataBitmap != null)
 			{
 				progressBar.setVisibility(View.GONE);
-				dataImageView.setImageDrawable(dataImage);
+				dataImageView.setImageBitmap(dataBitmap);
 				dataImageView.setVisibility(View.VISIBLE);
 			}
 
 			currentAnswerTextView.setText(getString(R.string.current_answer) + cell.getAns());
 
-			if (cell.getAns() != null)
-			{
-				isRightButton.setEnabled(true);
-			}
-			isEmptyButton.setEnabled(true);
-			quickInputButton.setEnabled(true);
-			inputButton.setEnabled(true);
-			notClearButton.setEnabled(true);
-			ignoreButton.setEnabled(true);
+			setUiEnaled(true);
 		}
 	}
 
@@ -582,6 +606,93 @@ public class MainActivity extends Activity
 					String subtitile = getString(R.string.current_progress) + cellCount.getDone() + " / " + cellCount.getCount();
 					getActionBar().setSubtitle(subtitile);
 				}
+			}
+		}
+	}
+
+
+	private class PopupInputDialogTask extends AsyncTask<Void, Void, Void> // Params, Progress, Result
+	{
+		private boolean isAnyException = false;
+		private String defaultAnswer;
+
+		public PopupInputDialogTask()
+		{
+
+		}
+
+		@Override
+		protected void onPreExecute()
+		{
+			super.onPreExecute();
+			setUiEnaled(false);
+		}
+
+		@Override
+		protected Void doInBackground(Void... params)
+		{
+			if (cell != null && cell.getAns() != null)
+			{
+				// This cell has answer so no need to do OCR.
+				defaultAnswer = cell.getAns();
+			}
+			else
+			{
+				// Try OCR.
+				defaultAnswer = ocrController.recognize(cell);
+			}
+
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void result)
+		{
+			// Update UI in UI thread!
+			if (isAnyException)
+			{
+				Toast.makeText(getApplicationContext(), getString(R.string.network_error), Toast.LENGTH_LONG).show();
+				//        		Toast.makeText(getApplicationContext(), errorMessage, Toast.LENGTH_LONG).show();
+
+				finish();
+			}
+
+			popupInputDialog(defaultAnswer);
+			setUiEnaled(true);
+		}
+	}
+
+	private void setUiEnaled(boolean enable)
+	{
+		if (enable)
+		{
+			if (cell.getAns() != null)
+			{
+				isRightButton.setEnabled(true);
+			}
+			isEmptyButton.setEnabled(true);
+			quickInputButton.setEnabled(true);
+			inputButton.setEnabled(true);
+			notClearButton.setEnabled(true);
+			ignoreButton.setEnabled(true);
+
+			if (shareMenuItem != null)
+			{
+				shareMenuItem.setEnabled(true);
+			}
+		}
+		else
+		{
+			isRightButton.setEnabled(false);
+			isEmptyButton.setEnabled(false);
+			quickInputButton.setEnabled(false);
+			inputButton.setEnabled(false);
+			notClearButton.setEnabled(false);
+			ignoreButton.setEnabled(false);
+
+			if (shareMenuItem != null)
+			{
+				shareMenuItem.setEnabled(false);
 			}
 		}
 	}

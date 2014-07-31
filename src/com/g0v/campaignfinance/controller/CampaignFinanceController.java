@@ -1,14 +1,11 @@
 package com.g0v.campaignfinance.controller;
 
-import android.graphics.drawable.Drawable;
 import com.g0v.campaignfinance.AppConfig;
 import com.g0v.campaignfinance.api.CampaignFinanceApi;
 import com.g0v.campaignfinance.model.Cell;
 import com.g0v.campaignfinance.model.CellCount;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -47,7 +44,7 @@ public class CampaignFinanceController
 	private void initCellList() throws IOException
 	{
 		cellList = new LinkedList<Cell>();
-		addCellIntoListFromApi(30);
+		openThreadToAddCellIntoListFromApi(30);
 	}
 
 	/**
@@ -113,20 +110,7 @@ public class CampaignFinanceController
 				for (int i = 0; i < inCellList.size(); i++)
 				{
 					Cell cell = inCellList.get(i);
-					if (cell.getImgDrawable() == null)
-					{
-						Drawable dataImage = null;
-						try
-						{
-							logDebug("openThreadToPreloadCellImages inCellList=" + cell);
-							dataImage = Drawable.createFromStream((InputStream) new URL(cell.getImgUrl()).getContent(), "src");
-						}
-						catch (IOException e)
-						{
-							e.printStackTrace();
-						}
-						cell.setImgDrawable(dataImage);
-					}
+					cell.getBitmap();
 				}
 			}
 		}).start();
