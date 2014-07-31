@@ -13,7 +13,9 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,7 +24,10 @@ import java.util.regex.Pattern;
  */
 public class CampaignFinanceApi
 {
-	private static final String API_URL = "http://campaign-finance.g0v.ctiml.tw/api/";
+	private static final String HOME_URL = "http://campaign-finance.g0v.ctiml.tw/";
+	private static final String API_URL = HOME_URL + "api/";
+
+	private static final Pattern PATTERN_S_TOKEN = Pattern.compile("sToken%22%3A(\\d+)%7D");
 
 	private static final String FORM_KEY_ANSWER = "ans";
 	private static final String FORM_KEY_S_TOKEN = "sToken";
@@ -30,6 +35,20 @@ public class CampaignFinanceApi
 	private Gson gson  = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 	private Type cellListType = new TypeToken<List<Cell>>(){}.getType();
 
+	private String sToken;
+
+
+	public CampaignFinanceApi()
+	{
+		try
+		{
+			getSToken();
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
 
 	public CellCount getCellCount() throws IOException
 	{
@@ -43,6 +62,14 @@ public class CampaignFinanceApi
 		String response = jsoupGet(API_URL + "getrandoms");
 
 		return gson.fromJson(response, cellListType);
+	}
+
+	public String getSToken() throws IOException
+	{
+		logDebug("getSToken");
+		String url = HOME_URL + "cell";
+
+		return jsoupGet(url);
 	}
 
 
@@ -113,6 +140,13 @@ public class CampaignFinanceApi
 			logDebug("postData=" + postData[0] + "," + postData[1]);
 		}
 
+		Map<String, String> dataMap = new HashMap<String, String>();
+		dataMap.put(postData[0], postData[1]);
+		if (sToken != null)
+		{
+			dataMap.put(FORM_KEY_S_TOKEN, sToken);
+		}
+
 		Connection.Response response = Jsoup.connect(url)
 				.header("Host", matchHost(url))
 				.header("Connection", "keep-alive")
@@ -122,15 +156,10 @@ public class CampaignFinanceApi
 				.header("Accept-Encoding", "gzip,deflate,sdch")
 				.header("Accept-Language", "zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4")
 				.timeout(60000)
-				.data(postData)
+				.data(dataMap)
 				.method(Connection.Method.POST)
 				.execute();
 
-//		Document doc = response.parse();
-//		logDebug("response.cookies()=" + response.cookies());
-//		logDebug("response.HISOKU=" + response.cookie("HISOKU"));
-//		logDebug("response.sToken=" + response.cookie("sToken"));
-//		logDebug("response.headers=" + response.headers());
 		logDebug("response.statusCode=" + response.statusCode());
 
 		if (response.statusCode() == 200)
@@ -160,10 +189,16 @@ public class CampaignFinanceApi
 				.method(Connection.Method.GET)
 				.execute();
 
-//		logDebug("response.cookies()=" + response.cookies());
-//		logDebug("response.HISOKU=" + response.cookie("HISOKU"));
-//		logDebug("response.sToken=" + response.cookie("sToken"));
-//		logDebug("response.headers=" + response.headers());
+		logDebug("response.cookies()=" + response.cookies());
+		logDebug("response.headers=" + response.headers());
+
+		String hisoku = response.cookie("HISOKU");
+		if (sToken == null && hisoku != null)
+		{
+			logDebug("response.HISOKU=" + hisoku);
+			logDebug("set sToken as " + matchStoken(hisoku));
+			sToken = matchStoken(hisoku);
+		}
 
 		Document doc = response.parse();
 		String body = StringEscapeUtils.unescapeXml(doc.body().html());
@@ -178,6 +213,11 @@ public class CampaignFinanceApi
 		{
 			System.out.println("[CampaignFinanceApi]" + message);
 		}
+	}
+
+	private String matchStoken(String inputStr)
+	{
+		return getMatch(inputStr, PATTERN_S_TOKEN);
 	}
 
 	private String matchHost(String inputStr)

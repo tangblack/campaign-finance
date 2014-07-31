@@ -19,6 +19,7 @@ public class CampaignFinanceController
 
 	private CampaignFinanceApi api;
 	private Queue<Cell> cellList;
+	private CellCount cellCount;
 
 
 	public static CampaignFinanceController getInstance() throws IOException
@@ -118,95 +119,104 @@ public class CampaignFinanceController
 
 	public CellCount getCellCount() throws IOException
 	{
-		return api.getCellCount();
+		cellCount = api.getCellCount();
+		return cellCount;
 	}
 
 	public void openThreadToFillCell(final Cell cell, final String answer)
 	{
-		if (AppConfig.DEBUG == false)
+		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
 		{
-			new Thread(new Runnable()
-			{
-				@Override
-				public void run()
-				{
-					try
-					{
-						api.fillCell(cell, answer);
-					}
-					catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-			}).start();
+			return;
 		}
+
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					api.fillCell(cell, answer);
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}).start();
 	}
 
 	public void openThreadToFillCellIsEmpty(final Cell cell)
 	{
-		if (AppConfig.DEBUG == false)
+		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
 		{
-			new Thread(new Runnable()
-			{
-				@Override
-				public void run()
-				{
-					try
-					{
-						api.fillCellIsEmpty(cell);
-					}
-					catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-			}).start();
+			return;
 		}
+
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					api.fillCellIsEmpty(cell);
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}).start();
 	}
 
 	public void openThreadToFillCellIsRight(final Cell cell)
 	{
-		if (AppConfig.DEBUG == false)
+		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
 		{
-			new Thread(new Runnable()
-			{
-				@Override
-				public void run()
-				{
-					try
-					{
-						api.fillCellIsRight(cell);
-					}
-					catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-			}).start();
+			return;
 		}
+
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					api.fillCellIsRight(cell);
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}).start();
 	}
 
 	public void openThreadToFillCellNotClear(final Cell cell)
 	{
-		if (AppConfig.DEBUG == false)
+		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
 		{
-			new Thread(new Runnable()
-			{
-				@Override
-				public void run()
-				{
-					try
-					{
-						api.reportUnclear(cell);
-					}
-					catch (IOException e)
-					{
-						e.printStackTrace();
-					}
-				}
-			}).start();
+			return;
 		}
+
+		new Thread(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				try
+				{
+					api.reportUnclear(cell);
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}).start();
 	}
 
 	private void logDebug(String message)
