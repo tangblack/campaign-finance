@@ -36,6 +36,7 @@ public class OcrController
 	private static final Pattern PATTERN_MONEY = Pattern.compile("\\D*(\\d+),(\\d+)|\\D*(\\d+)\\.(\\d+)|\\D*(\\d+)"); // \D*(\d+),(\d+)|\D*(\d+)\.(\d+)|\D*(\d+)
 	private static final NumberFormat FORMAT_MONEY = new DecimalFormat("#,###,###");
 
+	public static OcrController sInstance;
 
 	private TessBaseAPI baseApi;
 
@@ -45,7 +46,19 @@ public class OcrController
 	private String tessDataParentPath;
 
 
-	public OcrController(Context context)
+	public static OcrController getInstance(Context context)
+	{
+		if (sInstance != null)
+		{
+			return sInstance;
+		}
+		else
+		{
+			return new OcrController(context);
+		}
+	}
+
+	private OcrController(Context context)
 	{
 		this.context = context;
 		assetManager = context.getAssets();

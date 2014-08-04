@@ -77,7 +77,7 @@ public class MainActivity extends Activity
 			e.printStackTrace();
 		}
 
-		ocrController = new OcrController(getApplicationContext());
+		ocrController = OcrController.getInstance(getApplicationContext());
 
 		quickInputItemArrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.select_dialog_singlechoice);
 		quickInputItemArrayAdapter.add(getString(R.string.quick_input_item_1));

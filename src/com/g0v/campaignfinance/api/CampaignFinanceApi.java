@@ -31,23 +31,17 @@ public class CampaignFinanceApi
 
 	private static final String FORM_KEY_ANSWER = "ans";
 	private static final String FORM_KEY_S_TOKEN = "sToken";
+	private static final String FORM_KEY_API_KEY = "apikey";
 	private static final Pattern PATTERN_HOST = Pattern.compile("http://([\\w].+?)/");
 	private Gson gson  = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 	private Type cellListType = new TypeToken<List<Cell>>(){}.getType();
 
 	private String sToken;
+	private String apiKey = CompaignFinanceApiKey.VALUE;
 
 
 	public CampaignFinanceApi()
 	{
-		try
-		{
-			getSToken();
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
 	}
 
 	public CellCount getCellCount() throws IOException
@@ -142,6 +136,7 @@ public class CampaignFinanceApi
 
 		Map<String, String> dataMap = new HashMap<String, String>();
 		dataMap.put(postData[0], postData[1]);
+		dataMap.put(FORM_KEY_API_KEY, apiKey);
 		if (sToken != null)
 		{
 			dataMap.put(FORM_KEY_S_TOKEN, sToken);

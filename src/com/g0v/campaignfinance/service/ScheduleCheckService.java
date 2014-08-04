@@ -58,7 +58,7 @@ public class ScheduleCheckService extends Service
 //			interval = 21600000; // Interval(ms). 1/4 day = 24/4 * 60 * 60 * 1000
 			
 			triggerAtTime.setTimeInMillis(System.currentTimeMillis() + 10000);
-			interval = 86400000; // Interval(ms). 1day = 24 * 60 * 60 * 1000
+			interval = 43200000; // Interval(ms). 1/2 day = 12 * 60 * 60 * 1000
 		}
 		
 		alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, 

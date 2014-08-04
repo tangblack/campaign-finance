@@ -34,6 +34,9 @@
 -keep class org.json.** { *; }
 -dontwarn org.json.**
 
+-keep class com.googlecode.** { *; }
+-dontwarn com.googlecode.**
+
 -keep class * implements java.io.Serializable { *; }
 
 # proguard Missing type parameter

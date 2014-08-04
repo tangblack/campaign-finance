@@ -2281,6 +2281,7 @@ com.g0v.campaignfinance.R$drawable: int ic_stat_alert
 com.g0v.campaignfinance.R$drawable: R$drawable()
 com.g0v.campaignfinance.R$id
 com.g0v.campaignfinance.R$id: int RelativeLayout1
+com.g0v.campaignfinance.R$id: int clearImageButton
 com.g0v.campaignfinance.R$id: int currentAnswerTextView
 com.g0v.campaignfinance.R$id: int dataImageView
 com.g0v.campaignfinance.R$id: int ignoreButton
@@ -2290,6 +2291,7 @@ com.g0v.campaignfinance.R$id: int inputDialogDataEditText
 com.g0v.campaignfinance.R$id: int inputDialogDataImageView
 com.g0v.campaignfinance.R$id: int isEmptyButton
 com.g0v.campaignfinance.R$id: int isRightButton
+com.g0v.campaignfinance.R$id: int linkToFanPageTextView
 com.g0v.campaignfinance.R$id: int notClearButton
 com.g0v.campaignfinance.R$id: int progressBar
 com.g0v.campaignfinance.R$id: int progressBar1
@@ -2297,6 +2299,7 @@ com.g0v.campaignfinance.R$id: int quickInputButton
 com.g0v.campaignfinance.R$id: int quickInputDialogDataImageView
 com.g0v.campaignfinance.R$id: int quickInputDialogItemlistView
 com.g0v.campaignfinance.R$id: int shareItem
+com.g0v.campaignfinance.R$id: int textView
 com.g0v.campaignfinance.R$id: R$id()
 com.g0v.campaignfinance.R$layout
 com.g0v.campaignfinance.R$layout: int activity_main
@@ -2320,8 +2323,10 @@ com.g0v.campaignfinance.R$string: int current_answer
 com.g0v.campaignfinance.R$string: int current_progress
 com.g0v.campaignfinance.R$string: int ignore
 com.g0v.campaignfinance.R$string: int input
+com.g0v.campaignfinance.R$string: int inut_dialog_hint
 com.g0v.campaignfinance.R$string: int is_empty
 com.g0v.campaignfinance.R$string: int is_right
+com.g0v.campaignfinance.R$string: int link_to_fan_page
 com.g0v.campaignfinance.R$string: int network_error
 com.g0v.campaignfinance.R$string: int new_task_notification_content_text
 com.g0v.campaignfinance.R$string: int new_task_notification_content_title
@@ -2333,6 +2338,7 @@ com.g0v.campaignfinance.R$string: int quick_input_item_10
 com.g0v.campaignfinance.R$string: int quick_input_item_11
 com.g0v.campaignfinance.R$string: int quick_input_item_12
 com.g0v.campaignfinance.R$string: int quick_input_item_13
+com.g0v.campaignfinance.R$string: int quick_input_item_14
 com.g0v.campaignfinance.R$string: int quick_input_item_2
 com.g0v.campaignfinance.R$string: int quick_input_item_3
 com.g0v.campaignfinance.R$string: int quick_input_item_4
@@ -2379,11 +2385,14 @@ com.g0v.campaignfinance.api.CampaignFinanceApi
 com.g0v.campaignfinance.api.CampaignFinanceApi: CampaignFinanceApi()
 com.g0v.campaignfinance.api.CampaignFinanceApi: com.g0v.campaignfinance.model.CellCount getCellCount()
 com.g0v.campaignfinance.api.CampaignFinanceApi: java.util.List getRandoms()
+com.g0v.campaignfinance.api.CampaignFinanceApi: java.lang.String getSToken()
 com.g0v.campaignfinance.api.CampaignFinanceApi: boolean fillCellIsRight(com.g0v.campaignfinance.model.Cell)
 com.g0v.campaignfinance.api.CampaignFinanceApi: boolean fillCellIsEmpty(com.g0v.campaignfinance.model.Cell)
-com.g0v.campaignfinance.api.CampaignFinanceApi: boolean fillCellNotClear(com.g0v.campaignfinance.model.Cell)
+com.g0v.campaignfinance.api.CampaignFinanceApi: boolean reportUnclear(com.g0v.campaignfinance.model.Cell)
 com.g0v.campaignfinance.api.CampaignFinanceApi: boolean fillCell(com.g0v.campaignfinance.model.Cell,java.lang.String)
 com.g0v.campaignfinance.api.CampaignFinanceApi: void main(java.lang.String[])
+com.g0v.campaignfinance.api.CompaignFinanceApiKey
+com.g0v.campaignfinance.api.CompaignFinanceApiKey: java.lang.String VALUE
 com.g0v.campaignfinance.controller.CampaignFinanceController
 com.g0v.campaignfinance.controller.CampaignFinanceController: com.g0v.campaignfinance.controller.CampaignFinanceController sInstance
 com.g0v.campaignfinance.controller.CampaignFinanceController: com.g0v.campaignfinance.controller.CampaignFinanceController getInstance()
@@ -2393,6 +2402,10 @@ com.g0v.campaignfinance.controller.CampaignFinanceController: void openThreadToF
 com.g0v.campaignfinance.controller.CampaignFinanceController: void openThreadToFillCellIsEmpty(com.g0v.campaignfinance.model.Cell)
 com.g0v.campaignfinance.controller.CampaignFinanceController: void openThreadToFillCellIsRight(com.g0v.campaignfinance.model.Cell)
 com.g0v.campaignfinance.controller.CampaignFinanceController: void openThreadToFillCellNotClear(com.g0v.campaignfinance.model.Cell)
+com.g0v.campaignfinance.controller.OcrController
+com.g0v.campaignfinance.controller.OcrController: com.g0v.campaignfinance.controller.OcrController sInstance
+com.g0v.campaignfinance.controller.OcrController: com.g0v.campaignfinance.controller.OcrController getInstance(android.content.Context)
+com.g0v.campaignfinance.controller.OcrController: java.lang.String recognize(com.g0v.campaignfinance.model.Cell)
 com.g0v.campaignfinance.model.Cell
 com.g0v.campaignfinance.model.Cell: java.lang.String ans
 com.g0v.campaignfinance.model.Cell: int count
@@ -2401,7 +2414,7 @@ com.g0v.campaignfinance.model.Cell: java.lang.String imgUrl
 com.g0v.campaignfinance.model.Cell: int page
 com.g0v.campaignfinance.model.Cell: int x
 com.g0v.campaignfinance.model.Cell: int y
-com.g0v.campaignfinance.model.Cell: android.graphics.drawable.Drawable imgDrawable
+com.g0v.campaignfinance.model.Cell: android.graphics.Bitmap bitmap
 com.g0v.campaignfinance.model.Cell: Cell()
 com.g0v.campaignfinance.model.Cell: int getY()
 com.g0v.campaignfinance.model.Cell: java.lang.String getAns()
@@ -2410,8 +2423,7 @@ com.g0v.campaignfinance.model.Cell: int getId()
 com.g0v.campaignfinance.model.Cell: java.lang.String getImgUrl()
 com.g0v.campaignfinance.model.Cell: int getPage()
 com.g0v.campaignfinance.model.Cell: int getX()
-com.g0v.campaignfinance.model.Cell: android.graphics.drawable.Drawable getImgDrawable()
-com.g0v.campaignfinance.model.Cell: void setImgDrawable(android.graphics.drawable.Drawable)
+com.g0v.campaignfinance.model.Cell: android.graphics.Bitmap getBitmap()
 com.g0v.campaignfinance.model.Cell: java.lang.String toString()
 com.g0v.campaignfinance.model.CellCount
 com.g0v.campaignfinance.model.CellCount: java.lang.String count
@@ -3014,6 +3026,320 @@ com.google.gson.stream.MalformedJsonException: long serialVersionUID
 com.google.gson.stream.MalformedJsonException: MalformedJsonException(java.lang.String)
 com.google.gson.stream.MalformedJsonException: MalformedJsonException(java.lang.String,java.lang.Throwable)
 com.google.gson.stream.MalformedJsonException: MalformedJsonException(java.lang.Throwable)
+com.googlecode.leptonica.android.AdaptiveMap
+com.googlecode.leptonica.android.AdaptiveMap: int NORM_REDUCTION
+com.googlecode.leptonica.android.AdaptiveMap: int NORM_SIZE
+com.googlecode.leptonica.android.AdaptiveMap: int NORM_BG_VALUE
+com.googlecode.leptonica.android.AdaptiveMap: void <clinit>()
+com.googlecode.leptonica.android.AdaptiveMap: AdaptiveMap()
+com.googlecode.leptonica.android.AdaptiveMap: com.googlecode.leptonica.android.Pix backgroundNormMorph(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.AdaptiveMap: com.googlecode.leptonica.android.Pix backgroundNormMorph(com.googlecode.leptonica.android.Pix,int,int,int)
+com.googlecode.leptonica.android.AdaptiveMap: int nativeBackgroundNormMorph(int,int,int,int)
+com.googlecode.leptonica.android.Binarize
+com.googlecode.leptonica.android.Binarize: int OTSU_SIZE_X
+com.googlecode.leptonica.android.Binarize: int OTSU_SIZE_Y
+com.googlecode.leptonica.android.Binarize: int OTSU_SMOOTH_X
+com.googlecode.leptonica.android.Binarize: int OTSU_SMOOTH_Y
+com.googlecode.leptonica.android.Binarize: float OTSU_SCORE_FRACTION
+com.googlecode.leptonica.android.Binarize: void <clinit>()
+com.googlecode.leptonica.android.Binarize: Binarize()
+com.googlecode.leptonica.android.Binarize: com.googlecode.leptonica.android.Pix otsuAdaptiveThreshold(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.Binarize: com.googlecode.leptonica.android.Pix otsuAdaptiveThreshold(com.googlecode.leptonica.android.Pix,int,int,int,int,float)
+com.googlecode.leptonica.android.Binarize: int nativeOtsuAdaptiveThreshold(int,int,int,int,int,float)
+com.googlecode.leptonica.android.Box
+com.googlecode.leptonica.android.Box: int INDEX_X
+com.googlecode.leptonica.android.Box: int INDEX_Y
+com.googlecode.leptonica.android.Box: int INDEX_W
+com.googlecode.leptonica.android.Box: int INDEX_H
+com.googlecode.leptonica.android.Box: int mNativeBox
+com.googlecode.leptonica.android.Box: boolean mRecycled
+com.googlecode.leptonica.android.Box: void <clinit>()
+com.googlecode.leptonica.android.Box: Box(int)
+com.googlecode.leptonica.android.Box: Box(int,int,int,int)
+com.googlecode.leptonica.android.Box: int getX()
+com.googlecode.leptonica.android.Box: int getY()
+com.googlecode.leptonica.android.Box: int getWidth()
+com.googlecode.leptonica.android.Box: int getHeight()
+com.googlecode.leptonica.android.Box: int[] getGeometry()
+com.googlecode.leptonica.android.Box: boolean getGeometry(int[])
+com.googlecode.leptonica.android.Box: void recycle()
+com.googlecode.leptonica.android.Box: void finalize()
+com.googlecode.leptonica.android.Box: int nativeCreate(int,int,int,int)
+com.googlecode.leptonica.android.Box: int nativeGetX(int)
+com.googlecode.leptonica.android.Box: int nativeGetY(int)
+com.googlecode.leptonica.android.Box: int nativeGetWidth(int)
+com.googlecode.leptonica.android.Box: int nativeGetHeight(int)
+com.googlecode.leptonica.android.Box: void nativeDestroy(int)
+com.googlecode.leptonica.android.Box: boolean nativeGetGeometry(int,int[])
+com.googlecode.leptonica.android.Constants
+com.googlecode.leptonica.android.Constants: int L_INSERT
+com.googlecode.leptonica.android.Constants: int L_COPY
+com.googlecode.leptonica.android.Constants: int L_CLONE
+com.googlecode.leptonica.android.Constants: int L_COPY_CLONE
+com.googlecode.leptonica.android.Constants: int L_SORT_INCREASING
+com.googlecode.leptonica.android.Constants: int L_SORT_DECREASING
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_X
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_Y
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_WIDTH
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_HEIGHT
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_MIN_DIMENSION
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_MAX_DIMENSION
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_PERIMETER
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_AREA
+com.googlecode.leptonica.android.Constants: int L_SORT_BY_ASPECT_RATIO
+com.googlecode.leptonica.android.Constants: int IFF_UNKNOWN
+com.googlecode.leptonica.android.Constants: int IFF_BMP
+com.googlecode.leptonica.android.Constants: int IFF_JFIF_JPEG
+com.googlecode.leptonica.android.Constants: int IFF_PNG
+com.googlecode.leptonica.android.Constants: int IFF_TIFF
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_PACKBITS
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_RLE
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_G3
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_G4
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_LZW
+com.googlecode.leptonica.android.Constants: int IFF_TIFF_ZIP
+com.googlecode.leptonica.android.Constants: int IFF_PNM
+com.googlecode.leptonica.android.Constants: int IFF_PS
+com.googlecode.leptonica.android.Constants: int IFF_GIF
+com.googlecode.leptonica.android.Constants: int IFF_JP2
+com.googlecode.leptonica.android.Constants: int IFF_DEFAULT
+com.googlecode.leptonica.android.Constants: int IFF_SPIX
+com.googlecode.leptonica.android.Constants: Constants()
+com.googlecode.leptonica.android.Convert
+com.googlecode.leptonica.android.Convert: void <clinit>()
+com.googlecode.leptonica.android.Convert: Convert()
+com.googlecode.leptonica.android.Convert: com.googlecode.leptonica.android.Pix convertTo8(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.Convert: int nativeConvertTo8(int)
+com.googlecode.leptonica.android.Enhance
+com.googlecode.leptonica.android.Enhance: void <clinit>()
+com.googlecode.leptonica.android.Enhance: Enhance()
+com.googlecode.leptonica.android.Enhance: com.googlecode.leptonica.android.Pix unsharpMasking(com.googlecode.leptonica.android.Pix,int,float)
+com.googlecode.leptonica.android.Enhance: int nativeUnsharpMasking(int,int,float)
+com.googlecode.leptonica.android.JpegIO
+com.googlecode.leptonica.android.JpegIO: int DEFAULT_QUALITY
+com.googlecode.leptonica.android.JpegIO: boolean DEFAULT_PROGRESSIVE
+com.googlecode.leptonica.android.JpegIO: void <clinit>()
+com.googlecode.leptonica.android.JpegIO: JpegIO()
+com.googlecode.leptonica.android.JpegIO: byte[] compressToJpeg(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.JpegIO: byte[] compressToJpeg(com.googlecode.leptonica.android.Pix,int,boolean)
+com.googlecode.leptonica.android.JpegIO: byte[] nativeCompressToJpeg(int,int,boolean)
+com.googlecode.leptonica.android.Pix
+com.googlecode.leptonica.android.Pix: int INDEX_W
+com.googlecode.leptonica.android.Pix: int INDEX_H
+com.googlecode.leptonica.android.Pix: int INDEX_D
+com.googlecode.leptonica.android.Pix: int mNativePix
+com.googlecode.leptonica.android.Pix: boolean mRecycled
+com.googlecode.leptonica.android.Pix: void <clinit>()
+com.googlecode.leptonica.android.Pix: Pix(int)
+com.googlecode.leptonica.android.Pix: Pix(int,int,int)
+com.googlecode.leptonica.android.Pix: int getNativePix()
+com.googlecode.leptonica.android.Pix: byte[] getData()
+com.googlecode.leptonica.android.Pix: int[] getDimensions()
+com.googlecode.leptonica.android.Pix: boolean getDimensions(int[])
+com.googlecode.leptonica.android.Pix: com.googlecode.leptonica.android.Pix clone()
+com.googlecode.leptonica.android.Pix: com.googlecode.leptonica.android.Pix copy()
+com.googlecode.leptonica.android.Pix: boolean invert()
+com.googlecode.leptonica.android.Pix: void recycle()
+com.googlecode.leptonica.android.Pix: void finalize()
+com.googlecode.leptonica.android.Pix: com.googlecode.leptonica.android.Pix createFromPix(byte[],int,int,int)
+com.googlecode.leptonica.android.Pix: android.graphics.Rect getRect()
+com.googlecode.leptonica.android.Pix: int getWidth()
+com.googlecode.leptonica.android.Pix: int getHeight()
+com.googlecode.leptonica.android.Pix: int getDepth()
+com.googlecode.leptonica.android.Pix: int getPixel(int,int)
+com.googlecode.leptonica.android.Pix: void setPixel(int,int,int)
+com.googlecode.leptonica.android.Pix: int nativeCreatePix(int,int,int)
+com.googlecode.leptonica.android.Pix: int nativeCreateFromData(byte[],int,int,int)
+com.googlecode.leptonica.android.Pix: boolean nativeGetData(int,byte[])
+com.googlecode.leptonica.android.Pix: int nativeGetDataSize(int)
+com.googlecode.leptonica.android.Pix: int nativeClone(int)
+com.googlecode.leptonica.android.Pix: int nativeCopy(int)
+com.googlecode.leptonica.android.Pix: boolean nativeInvert(int)
+com.googlecode.leptonica.android.Pix: void nativeDestroy(int)
+com.googlecode.leptonica.android.Pix: boolean nativeGetDimensions(int,int[])
+com.googlecode.leptonica.android.Pix: int nativeGetWidth(int)
+com.googlecode.leptonica.android.Pix: int nativeGetHeight(int)
+com.googlecode.leptonica.android.Pix: int nativeGetDepth(int)
+com.googlecode.leptonica.android.Pix: int nativeGetPixel(int,int,int)
+com.googlecode.leptonica.android.Pix: void nativeSetPixel(int,int,int,int)
+com.googlecode.leptonica.android.Pix: java.lang.Object clone()
+com.googlecode.leptonica.android.Pixa
+com.googlecode.leptonica.android.Pixa: int mNativePixa
+com.googlecode.leptonica.android.Pixa: int mWidth
+com.googlecode.leptonica.android.Pixa: int mHeight
+com.googlecode.leptonica.android.Pixa: boolean mRecycled
+com.googlecode.leptonica.android.Pixa: void <clinit>()
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Pixa createPixa(int)
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Pixa createPixa(int,int,int)
+com.googlecode.leptonica.android.Pixa: Pixa(int,int,int)
+com.googlecode.leptonica.android.Pixa: int getNativePixa()
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Pixa copy()
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Pixa sort(int,int)
+com.googlecode.leptonica.android.Pixa: int size()
+com.googlecode.leptonica.android.Pixa: void recycle()
+com.googlecode.leptonica.android.Pixa: void finalize()
+com.googlecode.leptonica.android.Pixa: boolean join(com.googlecode.leptonica.android.Pixa)
+com.googlecode.leptonica.android.Pixa: void addPix(com.googlecode.leptonica.android.Pix,int)
+com.googlecode.leptonica.android.Pixa: void addBox(com.googlecode.leptonica.android.Box,int)
+com.googlecode.leptonica.android.Pixa: void add(com.googlecode.leptonica.android.Pix,com.googlecode.leptonica.android.Box,int)
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Box getBox(int)
+com.googlecode.leptonica.android.Pixa: com.googlecode.leptonica.android.Pix getPix(int)
+com.googlecode.leptonica.android.Pixa: int getWidth()
+com.googlecode.leptonica.android.Pixa: int getHeight()
+com.googlecode.leptonica.android.Pixa: android.graphics.Rect getRect()
+com.googlecode.leptonica.android.Pixa: android.graphics.Rect getBoxRect(int)
+com.googlecode.leptonica.android.Pixa: int[] getBoxGeometry(int)
+com.googlecode.leptonica.android.Pixa: boolean getBoxGeometry(int,int[])
+com.googlecode.leptonica.android.Pixa: java.util.ArrayList getBoxRects()
+com.googlecode.leptonica.android.Pixa: void replacePix(int,com.googlecode.leptonica.android.Pix,com.googlecode.leptonica.android.Box)
+com.googlecode.leptonica.android.Pixa: void mergeAndReplacePix(int,int)
+com.googlecode.leptonica.android.Pixa: boolean writeToFileRandomCmap(java.io.File)
+com.googlecode.leptonica.android.Pixa: int nativeCreate(int)
+com.googlecode.leptonica.android.Pixa: int nativeCopy(int)
+com.googlecode.leptonica.android.Pixa: int nativeSort(int,int,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeJoin(int,int)
+com.googlecode.leptonica.android.Pixa: int nativeGetCount(int)
+com.googlecode.leptonica.android.Pixa: void nativeDestroy(int)
+com.googlecode.leptonica.android.Pixa: void nativeAddPix(int,int,int)
+com.googlecode.leptonica.android.Pixa: void nativeAddBox(int,int,int)
+com.googlecode.leptonica.android.Pixa: void nativeAdd(int,int,int,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeWriteToFileRandomCmap(int,java.lang.String,int,int)
+com.googlecode.leptonica.android.Pixa: void nativeReplacePix(int,int,int,int)
+com.googlecode.leptonica.android.Pixa: void nativeMergeAndReplacePix(int,int,int)
+com.googlecode.leptonica.android.Pixa: int nativeGetBox(int,int)
+com.googlecode.leptonica.android.Pixa: int nativeGetPix(int,int)
+com.googlecode.leptonica.android.Pixa: boolean nativeGetBoxGeometry(int,int,int[])
+com.googlecode.leptonica.android.ReadFile
+com.googlecode.leptonica.android.ReadFile: void <clinit>()
+com.googlecode.leptonica.android.ReadFile: ReadFile()
+com.googlecode.leptonica.android.ReadFile: com.googlecode.leptonica.android.Pix readMem(byte[])
+com.googlecode.leptonica.android.ReadFile: com.googlecode.leptonica.android.Pix readBytes8(byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: boolean replaceBytes8(com.googlecode.leptonica.android.Pix,byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: com.googlecode.leptonica.android.Pixa readFiles(java.io.File,java.lang.String)
+com.googlecode.leptonica.android.ReadFile: com.googlecode.leptonica.android.Pix readFile(java.io.File)
+com.googlecode.leptonica.android.ReadFile: com.googlecode.leptonica.android.Pix readBitmap(android.graphics.Bitmap)
+com.googlecode.leptonica.android.ReadFile: int nativeReadMem(byte[],int)
+com.googlecode.leptonica.android.ReadFile: int nativeReadBytes8(byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: boolean nativeReplaceBytes8(int,byte[],int,int)
+com.googlecode.leptonica.android.ReadFile: int nativeReadFiles(java.lang.String,java.lang.String)
+com.googlecode.leptonica.android.ReadFile: int nativeReadFile(java.lang.String)
+com.googlecode.leptonica.android.ReadFile: int nativeReadBitmap(android.graphics.Bitmap)
+com.googlecode.leptonica.android.Rotate
+com.googlecode.leptonica.android.Rotate: boolean ROTATE_QUALITY
+com.googlecode.leptonica.android.Rotate: void <clinit>()
+com.googlecode.leptonica.android.Rotate: Rotate()
+com.googlecode.leptonica.android.Rotate: com.googlecode.leptonica.android.Pix rotate(com.googlecode.leptonica.android.Pix,float)
+com.googlecode.leptonica.android.Rotate: com.googlecode.leptonica.android.Pix rotate(com.googlecode.leptonica.android.Pix,float,boolean)
+com.googlecode.leptonica.android.Rotate: int nativeRotate(int,float,boolean)
+com.googlecode.leptonica.android.Scale
+com.googlecode.leptonica.android.Scale: int[] $SWITCH_TABLE$com$googlecode$leptonica$android$Scale$ScaleType
+com.googlecode.leptonica.android.Scale: void <clinit>()
+com.googlecode.leptonica.android.Scale: Scale()
+com.googlecode.leptonica.android.Scale: com.googlecode.leptonica.android.Pix scaleToSize(com.googlecode.leptonica.android.Pix,int,int,com.googlecode.leptonica.android.Scale$ScaleType)
+com.googlecode.leptonica.android.Scale: com.googlecode.leptonica.android.Pix scale(com.googlecode.leptonica.android.Pix,float)
+com.googlecode.leptonica.android.Scale: com.googlecode.leptonica.android.Pix scale(com.googlecode.leptonica.android.Pix,float,float)
+com.googlecode.leptonica.android.Scale: int nativeScale(int,float,float)
+com.googlecode.leptonica.android.Scale: int[] $SWITCH_TABLE$com$googlecode$leptonica$android$Scale$ScaleType()
+com.googlecode.leptonica.android.Scale$ScaleType
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType FILL
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType FIT
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType FIT_SHRINK
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType[] ENUM$VALUES
+com.googlecode.leptonica.android.Scale$ScaleType: void <clinit>()
+com.googlecode.leptonica.android.Scale$ScaleType: Scale$ScaleType(java.lang.String,int)
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType[] values()
+com.googlecode.leptonica.android.Scale$ScaleType: com.googlecode.leptonica.android.Scale$ScaleType valueOf(java.lang.String)
+com.googlecode.leptonica.android.Skew
+com.googlecode.leptonica.android.Skew: float SWEEP_RANGE
+com.googlecode.leptonica.android.Skew: float SWEEP_DELTA
+com.googlecode.leptonica.android.Skew: int SWEEP_REDUCTION
+com.googlecode.leptonica.android.Skew: int SEARCH_REDUCTION
+com.googlecode.leptonica.android.Skew: float SEARCH_MIN_DELTA
+com.googlecode.leptonica.android.Skew: void <clinit>()
+com.googlecode.leptonica.android.Skew: Skew()
+com.googlecode.leptonica.android.Skew: float findSkew(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.Skew: float findSkew(com.googlecode.leptonica.android.Pix,float,float,int,int,float)
+com.googlecode.leptonica.android.Skew: float nativeFindSkew(int,float,float,int,int,float)
+com.googlecode.leptonica.android.WriteFile
+com.googlecode.leptonica.android.WriteFile: int DEFAULT_QUALITY
+com.googlecode.leptonica.android.WriteFile: boolean DEFAULT_PROGRESSIVE
+com.googlecode.leptonica.android.WriteFile: void <clinit>()
+com.googlecode.leptonica.android.WriteFile: WriteFile()
+com.googlecode.leptonica.android.WriteFile: byte[] writeBytes8(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.WriteFile: int writeBytes8(com.googlecode.leptonica.android.Pix,byte[])
+com.googlecode.leptonica.android.WriteFile: boolean writeFiles(com.googlecode.leptonica.android.Pixa,java.io.File,java.lang.String,int)
+com.googlecode.leptonica.android.WriteFile: byte[] writeMem(com.googlecode.leptonica.android.Pix,int)
+com.googlecode.leptonica.android.WriteFile: boolean writeImpliedFormat(com.googlecode.leptonica.android.Pix,java.io.File)
+com.googlecode.leptonica.android.WriteFile: boolean writeImpliedFormat(com.googlecode.leptonica.android.Pix,java.io.File,int,boolean)
+com.googlecode.leptonica.android.WriteFile: android.graphics.Bitmap writeBitmap(com.googlecode.leptonica.android.Pix)
+com.googlecode.leptonica.android.WriteFile: int nativeWriteBytes8(int,byte[])
+com.googlecode.leptonica.android.WriteFile: boolean nativeWriteFiles(int,java.lang.String,int)
+com.googlecode.leptonica.android.WriteFile: byte[] nativeWriteMem(int,int)
+com.googlecode.leptonica.android.WriteFile: boolean nativeWriteImpliedFormat(int,java.lang.String,int,boolean)
+com.googlecode.leptonica.android.WriteFile: boolean nativeWriteBitmap(int,android.graphics.Bitmap)
+com.googlecode.tesseract.android.TessBaseAPI
+com.googlecode.tesseract.android.TessBaseAPI: int mNativeData
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_OSD_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_AUTO_OSD
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_AUTO_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_AUTO
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_COLUMN
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_BLOCK_VERT_TEXT
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_BLOCK
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_LINE
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_WORD
+com.googlecode.tesseract.android.TessBaseAPI: int PSM_SINGLE_CHAR
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_CHAR_WHITELIST
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String VAR_CHAR_BLACKLIST
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_TESSERACT_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_CUBE_ONLY
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_TESSERACT_CUBE_COMBINED
+com.googlecode.tesseract.android.TessBaseAPI: int OEM_DEFAULT
+com.googlecode.tesseract.android.TessBaseAPI: void <clinit>()
+com.googlecode.tesseract.android.TessBaseAPI: TessBaseAPI()
+com.googlecode.tesseract.android.TessBaseAPI: void finalize()
+com.googlecode.tesseract.android.TessBaseAPI: boolean init(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean init(java.lang.String,java.lang.String,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getLastInitLanguage()
+com.googlecode.tesseract.android.TessBaseAPI: void clear()
+com.googlecode.tesseract.android.TessBaseAPI: void end()
+com.googlecode.tesseract.android.TessBaseAPI: boolean setVariable(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void setPageSegMode(int)
+com.googlecode.tesseract.android.TessBaseAPI: void setDebug(boolean)
+com.googlecode.tesseract.android.TessBaseAPI: void setRectangle(android.graphics.Rect)
+com.googlecode.tesseract.android.TessBaseAPI: void setRectangle(int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(java.io.File)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(android.graphics.Bitmap)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(com.googlecode.leptonica.android.Pix)
+com.googlecode.tesseract.android.TessBaseAPI: void setImage(byte[],int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String getUTF8Text()
+com.googlecode.tesseract.android.TessBaseAPI: int meanConfidence()
+com.googlecode.tesseract.android.TessBaseAPI: int[] wordConfidences()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getRegions()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getTextlines()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getWords()
+com.googlecode.tesseract.android.TessBaseAPI: com.googlecode.leptonica.android.Pixa getCharacters()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeClassInit()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeConstruct()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeFinalize()
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeInit(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeInitOem(java.lang.String,java.lang.String,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetLastInitLanguage()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeClear()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeEnd()
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetImageBytes(byte[],int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetImagePix(int)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetRectangle(int,int,int,int)
+com.googlecode.tesseract.android.TessBaseAPI: java.lang.String nativeGetUTF8Text()
+com.googlecode.tesseract.android.TessBaseAPI: int nativeMeanConfidence()
+com.googlecode.tesseract.android.TessBaseAPI: int[] nativeWordConfidences()
+com.googlecode.tesseract.android.TessBaseAPI: boolean nativeSetVariable(java.lang.String,java.lang.String)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetDebug(boolean)
+com.googlecode.tesseract.android.TessBaseAPI: void nativeSetPageSegMode(int)
+com.googlecode.tesseract.android.TessBaseAPI: int nativeGetRegions()
+com.googlecode.tesseract.android.TessBaseAPI: int nativeGetTextlines()
+com.googlecode.tesseract.android.TessBaseAPI: int nativeGetWords()
+com.googlecode.tesseract.android.TessBaseAPI: int nativeGetCharacters()
 org.apache.commons.lang3.AnnotationUtils
 org.apache.commons.lang3.AnnotationUtils: org.apache.commons.lang3.builder.ToStringStyle TO_STRING_STYLE
 org.apache.commons.lang3.AnnotationUtils: AnnotationUtils()

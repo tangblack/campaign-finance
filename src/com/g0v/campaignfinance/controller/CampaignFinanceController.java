@@ -125,7 +125,7 @@ public class CampaignFinanceController
 
 	public void openThreadToFillCell(final Cell cell, final String answer)
 	{
-		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
+		if (canCallApi() == false)
 		{
 			return;
 		}
@@ -149,7 +149,7 @@ public class CampaignFinanceController
 
 	public void openThreadToFillCellIsEmpty(final Cell cell)
 	{
-		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
+		if (canCallApi() == false)
 		{
 			return;
 		}
@@ -173,7 +173,7 @@ public class CampaignFinanceController
 
 	public void openThreadToFillCellIsRight(final Cell cell)
 	{
-		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
+		if (canCallApi() == false)
 		{
 			return;
 		}
@@ -197,7 +197,7 @@ public class CampaignFinanceController
 
 	public void openThreadToFillCellNotClear(final Cell cell)
 	{
-		if (AppConfig.DEBUG || cellCount == null || cellCount.getTodo() == 0)
+		if (canCallApi() == false)
 		{
 			return;
 		}
@@ -217,6 +217,18 @@ public class CampaignFinanceController
 				}
 			}
 		}).start();
+	}
+
+	private boolean canCallApi()
+	{
+		if (cellCount == null || cellCount.getTodo() == 0)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 
 	private void logDebug(String message)

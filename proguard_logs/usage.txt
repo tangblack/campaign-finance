@@ -285,9 +285,16 @@ com.g0v.campaignfinance.MainActivity:
 com.g0v.campaignfinance.StartActivity$CreateCampaignFinanceControllerTask:
     private static final int PROGRESS_BAR_ADD_ONE
 com.g0v.campaignfinance.api.CampaignFinanceApi:
+    private static final java.lang.String HOME_URL
     private static final java.lang.String API_URL
     private static final java.lang.String FORM_KEY_ANSWER
     private static final java.lang.String FORM_KEY_S_TOKEN
+    private static final java.lang.String FORM_KEY_API_KEY
+com.g0v.campaignfinance.controller.OcrController:
+    private static final java.lang.String TRAINED_DATA_LANGUAGE
+    private static final java.lang.String TRAINED_DATA_FILE_NAME
+    private static final java.lang.String BLACKLIST
+    224:237:private java.lang.String getMatch(java.lang.String,java.util.regex.Pattern)
 com.google.gson.DefaultDateTypeAdapter:
     53:54:DefaultDateTypeAdapter(int)
 com.google.gson.FieldAttributes:
