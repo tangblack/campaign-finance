@@ -17,10 +17,10 @@ import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
 import com.g0v.campaignfinance.AppConfig;
-import com.g0v.campaignfinance.R;
 import com.g0v.campaignfinance.StartActivity;
 import com.g0v.campaignfinance.controller.CampaignFinanceController;
 import com.g0v.campaignfinance.model.CellCount;
+import com.g0v.campaignfinance1.R;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

@@ -55,4 +55,8 @@
     <string name="new_task_notification_ticker">有新的關卡上線了</string>
     <string name="new_task_notification_content_title">有新的關卡上線了</string>
     <string name="new_task_notification_content_text">有 %1$s 筆資料等你來破解</string>
+
+    <string name="url_privacy_policy">https://s3-ap-southeast-1.amazonaws.com/dev.android.com/privacy_policy.html</string>
+    <string name="action_open_privacy_policy">隱私權政策</string>
+
 </resources>

@@ -1,12 +1,18 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <item
-        android:id="@+id/shareItem"
-        android:orderInCategory="100"
-        android:showAsAction="always"
-        android:title="@string/share"
-        android:icon="@android:drawable/ic_menu_share"/>
-    
+            android:id="@+id/shareItem"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:title="@string/share"
+            android:icon="@android:drawable/ic_menu_share"/>
 
+
+    <item
+            android:id="@+id/openPrivacyPolicyMenuItem"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/action_open_privacy_policy"
+            android:visible="true"/>
 </menu>

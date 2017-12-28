@@ -2140,242 +2140,10 @@ android.support.v4.widget.ViewDragHelper$Callback: int clampViewPositionVertical
 com.g0v.campaignfinance.AppConfig
 com.g0v.campaignfinance.AppConfig: boolean DEBUG
 com.g0v.campaignfinance.AppConfig: AppConfig()
-com.g0v.campaignfinance.BuildConfig
-com.g0v.campaignfinance.BuildConfig: boolean DEBUG
-com.g0v.campaignfinance.BuildConfig: BuildConfig()
 com.g0v.campaignfinance.MainActivity
 com.g0v.campaignfinance.MainActivity: MainActivity()
 com.g0v.campaignfinance.MainActivity: void onCreate(android.os.Bundle)
 com.g0v.campaignfinance.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.g0v.campaignfinance.R
-com.g0v.campaignfinance.R: R()
-com.g0v.campaignfinance.R$attr
-com.g0v.campaignfinance.R$attr: R$attr()
-com.g0v.campaignfinance.R$color
-com.g0v.campaignfinance.R$color: int apptheme_color
-com.g0v.campaignfinance.R$color: R$color()
-com.g0v.campaignfinance.R$dimen
-com.g0v.campaignfinance.R$dimen: int activity_horizontal_margin
-com.g0v.campaignfinance.R$dimen: int activity_vertical_margin
-com.g0v.campaignfinance.R$dimen: int tab_host_default_height
-com.g0v.campaignfinance.R$dimen: R$dimen()
-com.g0v.campaignfinance.R$drawable
-com.g0v.campaignfinance.R$drawable: int ab_transparent_apptheme
-com.g0v.campaignfinance.R$drawable: int apptheme_activated_background_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_off_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_off_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_off_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_off_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_off_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_on_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_on_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_on_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_on_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_check_on_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_off_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_off_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_off_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_off_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_off_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_on_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_on_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_on_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_on_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_radio_on_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_off_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_off_normal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_off_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_on_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_on_normal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_rating_star_on_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_off_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_off_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_off_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_off_normal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_off_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_on_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_on_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_on_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_on_normal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_btn_toggle_on_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_edit_text_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_fastscroll_thumb_default_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_fastscroll_thumb_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_fastscroll_thumb_pressed_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_ic_navigation_drawer
-com.g0v.campaignfinance.R$drawable: int apptheme_item_background_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_list_activated_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_list_focused_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_list_longpressed_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_list_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_list_selector_background_transition_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_list_selector_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_list_selector_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progress_bg_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progress_horizontal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progress_indeterminate_horizontal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progress_primary_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progress_secondary_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo1
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo2
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo3
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo4
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo5
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo6
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo7
-com.g0v.campaignfinance.R$drawable: int apptheme_progressbar_indeterminate_holo8
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_big_half_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_big_off_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_big_on_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_small_half_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_small_off_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_rate_star_small_on_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_ratingbar_full_empty_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_ratingbar_full_filled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_ratingbar_full_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_ratingbar_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_ratingbar_small_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_control_disabled_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_control_focused_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_control_normal_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_control_pressed_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_control_selector_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_primary_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_progress_horizontal_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_secondary_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_scrubber_track_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_spinner_background_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_spinner_default_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_spinner_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_spinner_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_spinner_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_bg_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_bg_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_bg_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_inner_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_thumb_activated_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_thumb_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_thumb_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_thumb_pressed_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_switch_track_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_indicator_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_selected_focused_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_selected_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_selected_pressed_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_unselected_focused_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_unselected_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_tab_unselected_pressed_holo
-com.g0v.campaignfinance.R$drawable: int apptheme_text_select_handle_left
-com.g0v.campaignfinance.R$drawable: int apptheme_text_select_handle_middle
-com.g0v.campaignfinance.R$drawable: int apptheme_text_select_handle_right
-com.g0v.campaignfinance.R$drawable: int apptheme_textfield_activated_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_textfield_default_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_textfield_disabled_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_textfield_disabled_holo_dark
-com.g0v.campaignfinance.R$drawable: int apptheme_textfield_focused_holo_dark
-com.g0v.campaignfinance.R$drawable: int ic_launcher
-com.g0v.campaignfinance.R$drawable: int ic_stat_alert
-com.g0v.campaignfinance.R$drawable: R$drawable()
-com.g0v.campaignfinance.R$id
-com.g0v.campaignfinance.R$id: int RelativeLayout1
-com.g0v.campaignfinance.R$id: int clearImageButton
-com.g0v.campaignfinance.R$id: int currentAnswerTextView
-com.g0v.campaignfinance.R$id: int dataImageView
-com.g0v.campaignfinance.R$id: int ignoreButton
-com.g0v.campaignfinance.R$id: int imageView1
-com.g0v.campaignfinance.R$id: int inputButton
-com.g0v.campaignfinance.R$id: int inputDialogDataEditText
-com.g0v.campaignfinance.R$id: int inputDialogDataImageView
-com.g0v.campaignfinance.R$id: int isEmptyButton
-com.g0v.campaignfinance.R$id: int isRightButton
-com.g0v.campaignfinance.R$id: int linkToFanPageTextView
-com.g0v.campaignfinance.R$id: int notClearButton
-com.g0v.campaignfinance.R$id: int progressBar
-com.g0v.campaignfinance.R$id: int progressBar1
-com.g0v.campaignfinance.R$id: int quickInputButton
-com.g0v.campaignfinance.R$id: int quickInputDialogDataImageView
-com.g0v.campaignfinance.R$id: int quickInputDialogItemlistView
-com.g0v.campaignfinance.R$id: int shareItem
-com.g0v.campaignfinance.R$id: int textView
-com.g0v.campaignfinance.R$id: R$id()
-com.g0v.campaignfinance.R$layout
-com.g0v.campaignfinance.R$layout: int activity_main
-com.g0v.campaignfinance.R$layout: int activity_start
-com.g0v.campaignfinance.R$layout: int apptheme_tab_indicator_holo
-com.g0v.campaignfinance.R$layout: int dialog_input
-com.g0v.campaignfinance.R$layout: int dialog_quick_input
-com.g0v.campaignfinance.R$layout: R$layout()
-com.g0v.campaignfinance.R$menu
-com.g0v.campaignfinance.R$menu: int main
-com.g0v.campaignfinance.R$menu: R$menu()
-com.g0v.campaignfinance.R$raw
-com.g0v.campaignfinance.R$raw: int smb_1_up
-com.g0v.campaignfinance.R$raw: int smb_coin
-com.g0v.campaignfinance.R$raw: int smb_kick
-com.g0v.campaignfinance.R$raw: R$raw()
-com.g0v.campaignfinance.R$string
-com.g0v.campaignfinance.R$string: int app_name
-com.g0v.campaignfinance.R$string: int cancel
-com.g0v.campaignfinance.R$string: int current_answer
-com.g0v.campaignfinance.R$string: int current_progress
-com.g0v.campaignfinance.R$string: int ignore
-com.g0v.campaignfinance.R$string: int input
-com.g0v.campaignfinance.R$string: int inut_dialog_hint
-com.g0v.campaignfinance.R$string: int is_empty
-com.g0v.campaignfinance.R$string: int is_right
-com.g0v.campaignfinance.R$string: int link_to_fan_page
-com.g0v.campaignfinance.R$string: int network_error
-com.g0v.campaignfinance.R$string: int new_task_notification_content_text
-com.g0v.campaignfinance.R$string: int new_task_notification_content_title
-com.g0v.campaignfinance.R$string: int new_task_notification_ticker
-com.g0v.campaignfinance.R$string: int not_clear
-com.g0v.campaignfinance.R$string: int quick_input
-com.g0v.campaignfinance.R$string: int quick_input_item_1
-com.g0v.campaignfinance.R$string: int quick_input_item_10
-com.g0v.campaignfinance.R$string: int quick_input_item_11
-com.g0v.campaignfinance.R$string: int quick_input_item_12
-com.g0v.campaignfinance.R$string: int quick_input_item_13
-com.g0v.campaignfinance.R$string: int quick_input_item_14
-com.g0v.campaignfinance.R$string: int quick_input_item_2
-com.g0v.campaignfinance.R$string: int quick_input_item_3
-com.g0v.campaignfinance.R$string: int quick_input_item_4
-com.g0v.campaignfinance.R$string: int quick_input_item_5
-com.g0v.campaignfinance.R$string: int quick_input_item_6
-com.g0v.campaignfinance.R$string: int quick_input_item_7
-com.g0v.campaignfinance.R$string: int quick_input_item_8
-com.g0v.campaignfinance.R$string: int quick_input_item_9
-com.g0v.campaignfinance.R$string: int send
-com.g0v.campaignfinance.R$string: int share
-com.g0v.campaignfinance.R$string: int share_body
-com.g0v.campaignfinance.R$string: int share_body_with_todo
-com.g0v.campaignfinance.R$string: int share_chooser_title
-com.g0v.campaignfinance.R$string: int share_subject
-com.g0v.campaignfinance.R$string: int share_subject_with_todo
-com.g0v.campaignfinance.R$string: R$string()
-com.g0v.campaignfinance.R$style
-com.g0v.campaignfinance.R$style: int ActionBar_Transparent_AppTheme
-com.g0v.campaignfinance.R$style: int AppTheme
-com.g0v.campaignfinance.R$style: int AutoCompleteTextViewAppTheme
-com.g0v.campaignfinance.R$style: int CheckBoxAppTheme
-com.g0v.campaignfinance.R$style: int EditTextAppTheme
-com.g0v.campaignfinance.R$style: int ListViewAppTheme
-com.g0v.campaignfinance.R$style: int ListViewAppTheme_White
-com.g0v.campaignfinance.R$style: int ProgressBarAppTheme
-com.g0v.campaignfinance.R$style: int RadioButtonAppTheme
-com.g0v.campaignfinance.R$style: int RatingBarAppTheme
-com.g0v.campaignfinance.R$style: int RatingBarBigAppTheme
-com.g0v.campaignfinance.R$style: int RatingBarSmallAppTheme
-com.g0v.campaignfinance.R$style: int SeekBarAppTheme
-com.g0v.campaignfinance.R$style: int SpinnerAppTheme
-com.g0v.campaignfinance.R$style: int SpinnerDropDownItemAppTheme
-com.g0v.campaignfinance.R$style: int SpinnerItemAppTheme
-com.g0v.campaignfinance.R$style: int TabAppTheme
-com.g0v.campaignfinance.R$style: int TabTextAppTheme
-com.g0v.campaignfinance.R$style: int ToggleAppTheme
-com.g0v.campaignfinance.R$style: R$style()
 com.g0v.campaignfinance.StartActivity
 com.g0v.campaignfinance.StartActivity: StartActivity()
 com.g0v.campaignfinance.StartActivity: void onCreate(android.os.Bundle)
@@ -2446,6 +2214,241 @@ com.g0v.campaignfinance.service.ScheduleCheckService: void onCreate()
 com.g0v.campaignfinance.service.ScheduleCheckService: void onDestroy()
 com.g0v.campaignfinance.service.ScheduleCheckService: int onStartCommand(android.content.Intent,int,int)
 com.g0v.campaignfinance.service.ScheduleCheckService: android.os.IBinder onBind(android.content.Intent)
+com.g0v.campaignfinance1.BuildConfig
+com.g0v.campaignfinance1.BuildConfig: boolean DEBUG
+com.g0v.campaignfinance1.BuildConfig: BuildConfig()
+com.g0v.campaignfinance1.R
+com.g0v.campaignfinance1.R: R()
+com.g0v.campaignfinance1.R$attr
+com.g0v.campaignfinance1.R$attr: R$attr()
+com.g0v.campaignfinance1.R$color
+com.g0v.campaignfinance1.R$color: int apptheme_color
+com.g0v.campaignfinance1.R$color: R$color()
+com.g0v.campaignfinance1.R$dimen
+com.g0v.campaignfinance1.R$dimen: int activity_horizontal_margin
+com.g0v.campaignfinance1.R$dimen: int activity_vertical_margin
+com.g0v.campaignfinance1.R$dimen: int tab_host_default_height
+com.g0v.campaignfinance1.R$dimen: R$dimen()
+com.g0v.campaignfinance1.R$drawable
+com.g0v.campaignfinance1.R$drawable: int ab_transparent_apptheme
+com.g0v.campaignfinance1.R$drawable: int apptheme_activated_background_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_off_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_off_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_off_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_off_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_off_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_on_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_on_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_on_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_on_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_check_on_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_off_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_off_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_off_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_off_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_off_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_on_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_on_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_on_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_on_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_radio_on_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_off_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_off_normal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_off_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_on_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_on_normal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_rating_star_on_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_off_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_off_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_off_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_off_normal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_off_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_on_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_on_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_on_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_on_normal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_btn_toggle_on_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_edit_text_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_fastscroll_thumb_default_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_fastscroll_thumb_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_fastscroll_thumb_pressed_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_ic_navigation_drawer
+com.g0v.campaignfinance1.R$drawable: int apptheme_item_background_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_activated_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_focused_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_longpressed_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_selector_background_transition_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_selector_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_list_selector_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progress_bg_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progress_horizontal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progress_indeterminate_horizontal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progress_primary_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progress_secondary_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo1
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo2
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo3
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo4
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo5
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo6
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo7
+com.g0v.campaignfinance1.R$drawable: int apptheme_progressbar_indeterminate_holo8
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_big_half_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_big_off_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_big_on_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_small_half_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_small_off_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_rate_star_small_on_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_ratingbar_full_empty_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_ratingbar_full_filled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_ratingbar_full_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_ratingbar_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_ratingbar_small_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_control_disabled_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_control_focused_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_control_normal_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_control_pressed_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_control_selector_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_primary_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_progress_horizontal_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_secondary_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_scrubber_track_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_spinner_background_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_spinner_default_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_spinner_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_spinner_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_spinner_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_bg_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_bg_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_bg_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_inner_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_thumb_activated_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_thumb_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_thumb_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_thumb_pressed_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_switch_track_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_indicator_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_selected_focused_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_selected_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_selected_pressed_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_unselected_focused_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_unselected_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_tab_unselected_pressed_holo
+com.g0v.campaignfinance1.R$drawable: int apptheme_text_select_handle_left
+com.g0v.campaignfinance1.R$drawable: int apptheme_text_select_handle_middle
+com.g0v.campaignfinance1.R$drawable: int apptheme_text_select_handle_right
+com.g0v.campaignfinance1.R$drawable: int apptheme_textfield_activated_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_textfield_default_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_textfield_disabled_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_textfield_disabled_holo_dark
+com.g0v.campaignfinance1.R$drawable: int apptheme_textfield_focused_holo_dark
+com.g0v.campaignfinance1.R$drawable: int ic_launcher
+com.g0v.campaignfinance1.R$drawable: int ic_stat_alert
+com.g0v.campaignfinance1.R$drawable: R$drawable()
+com.g0v.campaignfinance1.R$id
+com.g0v.campaignfinance1.R$id: int RelativeLayout1
+com.g0v.campaignfinance1.R$id: int clearImageButton
+com.g0v.campaignfinance1.R$id: int currentAnswerTextView
+com.g0v.campaignfinance1.R$id: int dataImageView
+com.g0v.campaignfinance1.R$id: int ignoreButton
+com.g0v.campaignfinance1.R$id: int imageView1
+com.g0v.campaignfinance1.R$id: int inputButton
+com.g0v.campaignfinance1.R$id: int inputDialogDataEditText
+com.g0v.campaignfinance1.R$id: int inputDialogDataImageView
+com.g0v.campaignfinance1.R$id: int isEmptyButton
+com.g0v.campaignfinance1.R$id: int isRightButton
+com.g0v.campaignfinance1.R$id: int linkToFanPageTextView
+com.g0v.campaignfinance1.R$id: int notClearButton
+com.g0v.campaignfinance1.R$id: int openPrivacyPolicyMenuItem
+com.g0v.campaignfinance1.R$id: int progressBar
+com.g0v.campaignfinance1.R$id: int progressBar1
+com.g0v.campaignfinance1.R$id: int quickInputButton
+com.g0v.campaignfinance1.R$id: int quickInputDialogDataImageView
+com.g0v.campaignfinance1.R$id: int quickInputDialogItemlistView
+com.g0v.campaignfinance1.R$id: int shareItem
+com.g0v.campaignfinance1.R$id: int textView
+com.g0v.campaignfinance1.R$id: R$id()
+com.g0v.campaignfinance1.R$layout
+com.g0v.campaignfinance1.R$layout: int activity_main
+com.g0v.campaignfinance1.R$layout: int activity_start
+com.g0v.campaignfinance1.R$layout: int apptheme_tab_indicator_holo
+com.g0v.campaignfinance1.R$layout: int dialog_input
+com.g0v.campaignfinance1.R$layout: int dialog_quick_input
+com.g0v.campaignfinance1.R$layout: R$layout()
+com.g0v.campaignfinance1.R$menu
+com.g0v.campaignfinance1.R$menu: int main
+com.g0v.campaignfinance1.R$menu: R$menu()
+com.g0v.campaignfinance1.R$raw
+com.g0v.campaignfinance1.R$raw: int smb_1_up
+com.g0v.campaignfinance1.R$raw: int smb_coin
+com.g0v.campaignfinance1.R$raw: int smb_kick
+com.g0v.campaignfinance1.R$raw: R$raw()
+com.g0v.campaignfinance1.R$string
+com.g0v.campaignfinance1.R$string: int action_open_privacy_policy
+com.g0v.campaignfinance1.R$string: int app_name
+com.g0v.campaignfinance1.R$string: int cancel
+com.g0v.campaignfinance1.R$string: int current_answer
+com.g0v.campaignfinance1.R$string: int current_progress
+com.g0v.campaignfinance1.R$string: int ignore
+com.g0v.campaignfinance1.R$string: int input
+com.g0v.campaignfinance1.R$string: int inut_dialog_hint
+com.g0v.campaignfinance1.R$string: int is_empty
+com.g0v.campaignfinance1.R$string: int is_right
+com.g0v.campaignfinance1.R$string: int link_to_fan_page
+com.g0v.campaignfinance1.R$string: int network_error
+com.g0v.campaignfinance1.R$string: int new_task_notification_content_text
+com.g0v.campaignfinance1.R$string: int new_task_notification_content_title
+com.g0v.campaignfinance1.R$string: int new_task_notification_ticker
+com.g0v.campaignfinance1.R$string: int not_clear
+com.g0v.campaignfinance1.R$string: int quick_input
+com.g0v.campaignfinance1.R$string: int quick_input_item_1
+com.g0v.campaignfinance1.R$string: int quick_input_item_10
+com.g0v.campaignfinance1.R$string: int quick_input_item_11
+com.g0v.campaignfinance1.R$string: int quick_input_item_12
+com.g0v.campaignfinance1.R$string: int quick_input_item_13
+com.g0v.campaignfinance1.R$string: int quick_input_item_14
+com.g0v.campaignfinance1.R$string: int quick_input_item_2
+com.g0v.campaignfinance1.R$string: int quick_input_item_3
+com.g0v.campaignfinance1.R$string: int quick_input_item_4
+com.g0v.campaignfinance1.R$string: int quick_input_item_5
+com.g0v.campaignfinance1.R$string: int quick_input_item_6
+com.g0v.campaignfinance1.R$string: int quick_input_item_7
+com.g0v.campaignfinance1.R$string: int quick_input_item_8
+com.g0v.campaignfinance1.R$string: int quick_input_item_9
+com.g0v.campaignfinance1.R$string: int send
+com.g0v.campaignfinance1.R$string: int share
+com.g0v.campaignfinance1.R$string: int share_body
+com.g0v.campaignfinance1.R$string: int share_body_with_todo
+com.g0v.campaignfinance1.R$string: int share_chooser_title
+com.g0v.campaignfinance1.R$string: int share_subject
+com.g0v.campaignfinance1.R$string: int share_subject_with_todo
+com.g0v.campaignfinance1.R$string: int url_privacy_policy
+com.g0v.campaignfinance1.R$string: R$string()
+com.g0v.campaignfinance1.R$style
+com.g0v.campaignfinance1.R$style: int ActionBar_Transparent_AppTheme
+com.g0v.campaignfinance1.R$style: int AppTheme
+com.g0v.campaignfinance1.R$style: int AutoCompleteTextViewAppTheme
+com.g0v.campaignfinance1.R$style: int CheckBoxAppTheme
+com.g0v.campaignfinance1.R$style: int EditTextAppTheme
+com.g0v.campaignfinance1.R$style: int ListViewAppTheme
+com.g0v.campaignfinance1.R$style: int ListViewAppTheme_White
+com.g0v.campaignfinance1.R$style: int ProgressBarAppTheme
+com.g0v.campaignfinance1.R$style: int RadioButtonAppTheme
+com.g0v.campaignfinance1.R$style: int RatingBarAppTheme
+com.g0v.campaignfinance1.R$style: int RatingBarBigAppTheme
+com.g0v.campaignfinance1.R$style: int RatingBarSmallAppTheme
+com.g0v.campaignfinance1.R$style: int SeekBarAppTheme
+com.g0v.campaignfinance1.R$style: int SpinnerAppTheme
+com.g0v.campaignfinance1.R$style: int SpinnerDropDownItemAppTheme
+com.g0v.campaignfinance1.R$style: int SpinnerItemAppTheme
+com.g0v.campaignfinance1.R$style: int TabAppTheme
+com.g0v.campaignfinance1.R$style: int TabTextAppTheme
+com.g0v.campaignfinance1.R$style: int ToggleAppTheme
+com.g0v.campaignfinance1.R$style: R$style()
 com.google.gson.ExclusionStrategy
 com.google.gson.ExclusionStrategy: boolean shouldSkipField(com.google.gson.FieldAttributes)
 com.google.gson.ExclusionStrategy: boolean shouldSkipClass(java.lang.Class)

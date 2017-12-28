@@ -4906,8 +4906,6 @@ android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.V
     319:319:int clampViewPositionVertical(android.view.View,int,int) -> clampViewPositionVertical
 com.g0v.campaignfinance.AppConfig -> com.g0v.campaignfinance.AppConfig:
     boolean DEBUG -> DEBUG
-com.g0v.campaignfinance.BuildConfig -> com.g0v.campaignfinance.BuildConfig:
-    boolean DEBUG -> DEBUG
 com.g0v.campaignfinance.MainActivity -> com.g0v.campaignfinance.MainActivity:
     java.lang.String TAG -> a
     java.util.regex.Pattern PATTERN_ONLY_NUMBER -> b
@@ -4924,129 +4922,311 @@ com.g0v.campaignfinance.MainActivity -> com.g0v.campaignfinance.MainActivity:
     android.widget.TextView linkToFanPageTextView -> m
     android.widget.ArrayAdapter quickInputItemArrayAdapter -> n
     android.view.MenuItem shareMenuItem -> o
-    com.g0v.campaignfinance.controller.CampaignFinanceController campaignFinanceController -> p
-    com.g0v.campaignfinance.model.Cell cell -> q
-    com.g0v.campaignfinance.model.CellCount cellCount -> r
-    android.graphics.Bitmap dataBitmap -> s
-    long pollCellCount -> t
-    long playCoinSoundCount -> u
-    com.g0v.campaignfinance.controller.OcrController ocrController -> v
-    68:179:void onCreate(android.os.Bundle) -> onCreate
-    185:218:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-    226:283:void popupQuickDialog() -> b
-    291:377:void popupInputDialog(java.lang.String) -> a
-    381:382:boolean isOnlyNumber(java.lang.String) -> b
-    391:391:void logDebug(java.lang.String) -> c
-    395:401:void doNextWork() -> c
-    439:439:void playCoinSound() -> d
-    462:462:void playKickSound() -> e
-    667:698:void setUiEnaled(boolean) -> a
-    28:28:void access$000(com.g0v.campaignfinance.MainActivity) -> a
-    28:28:com.g0v.campaignfinance.model.Cell access$100(com.g0v.campaignfinance.MainActivity) -> b
-    28:28:com.g0v.campaignfinance.controller.CampaignFinanceController access$200(com.g0v.campaignfinance.MainActivity) -> c
-    28:28:void access$300(com.g0v.campaignfinance.MainActivity) -> d
-    28:28:void access$400(com.g0v.campaignfinance.MainActivity) -> e
-    28:28:void access$500(com.g0v.campaignfinance.MainActivity) -> f
-    28:28:void access$600(com.g0v.campaignfinance.MainActivity,java.lang.String) -> a
-    28:28:com.g0v.campaignfinance.model.CellCount access$700(com.g0v.campaignfinance.MainActivity) -> g
-    28:28:android.widget.ArrayAdapter access$800(com.g0v.campaignfinance.MainActivity) -> h
-    28:28:boolean access$900(com.g0v.campaignfinance.MainActivity,java.lang.String) -> b
-    28:28:java.text.NumberFormat access$1000() -> a
-    28:28:long access$1114(com.g0v.campaignfinance.MainActivity,long) -> a
-    28:28:android.widget.ImageView access$1200(com.g0v.campaignfinance.MainActivity) -> i
-    28:28:android.widget.ProgressBar access$1300(com.g0v.campaignfinance.MainActivity) -> j
-    28:28:android.widget.TextView access$1400(com.g0v.campaignfinance.MainActivity) -> k
-    28:28:void access$1500(com.g0v.campaignfinance.MainActivity,boolean) -> a
-    28:28:com.g0v.campaignfinance.model.Cell access$102(com.g0v.campaignfinance.MainActivity,com.g0v.campaignfinance.model.Cell) -> a
-    28:28:android.graphics.Bitmap access$1602(com.g0v.campaignfinance.MainActivity,android.graphics.Bitmap) -> a
-    28:28:android.graphics.Bitmap access$1600(com.g0v.campaignfinance.MainActivity) -> l
-    28:28:com.g0v.campaignfinance.model.CellCount access$702(com.g0v.campaignfinance.MainActivity,com.g0v.campaignfinance.model.CellCount) -> a
-    28:28:com.g0v.campaignfinance.controller.OcrController access$1700(com.g0v.campaignfinance.MainActivity) -> m
-    28:28:void access$1800(com.g0v.campaignfinance.MainActivity,java.lang.String) -> c
+    android.view.MenuItem openPrivacyPolicyMenuItem -> p
+    com.g0v.campaignfinance.controller.CampaignFinanceController campaignFinanceController -> q
+    com.g0v.campaignfinance.model.Cell cell -> r
+    com.g0v.campaignfinance.model.CellCount cellCount -> s
+    android.graphics.Bitmap dataBitmap -> t
+    long pollCellCount -> u
+    long playCoinSoundCount -> v
+    com.g0v.campaignfinance.controller.OcrController ocrController -> w
+    71:182:void onCreate(android.os.Bundle) -> onCreate
+    188:233:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    241:298:void popupQuickDialog() -> b
+    306:392:void popupInputDialog(java.lang.String) -> a
+    396:397:boolean isOnlyNumber(java.lang.String) -> b
+    406:406:void logDebug(java.lang.String) -> c
+    410:416:void doNextWork() -> c
+    454:454:void playCoinSound() -> d
+    477:477:void playKickSound() -> e
+    682:713:void setUiEnaled(boolean) -> a
+    30:30:void access$000(com.g0v.campaignfinance.MainActivity) -> a
+    30:30:com.g0v.campaignfinance.model.Cell access$100(com.g0v.campaignfinance.MainActivity) -> b
+    30:30:com.g0v.campaignfinance.controller.CampaignFinanceController access$200(com.g0v.campaignfinance.MainActivity) -> c
+    30:30:void access$300(com.g0v.campaignfinance.MainActivity) -> d
+    30:30:void access$400(com.g0v.campaignfinance.MainActivity) -> e
+    30:30:void access$500(com.g0v.campaignfinance.MainActivity) -> f
+    30:30:void access$600(com.g0v.campaignfinance.MainActivity,java.lang.String) -> a
+    30:30:com.g0v.campaignfinance.model.CellCount access$700(com.g0v.campaignfinance.MainActivity) -> g
+    30:30:android.widget.ArrayAdapter access$800(com.g0v.campaignfinance.MainActivity) -> h
+    30:30:boolean access$900(com.g0v.campaignfinance.MainActivity,java.lang.String) -> b
+    30:30:java.text.NumberFormat access$1000() -> a
+    30:30:long access$1100(com.g0v.campaignfinance.MainActivity) -> i
+    30:30:long access$1102(com.g0v.campaignfinance.MainActivity,long) -> a
+    30:30:android.widget.ImageView access$1200(com.g0v.campaignfinance.MainActivity) -> j
+    30:30:android.widget.ProgressBar access$1300(com.g0v.campaignfinance.MainActivity) -> k
+    30:30:android.widget.TextView access$1400(com.g0v.campaignfinance.MainActivity) -> l
+    30:30:void access$1500(com.g0v.campaignfinance.MainActivity,boolean) -> a
+    30:30:com.g0v.campaignfinance.model.Cell access$102(com.g0v.campaignfinance.MainActivity,com.g0v.campaignfinance.model.Cell) -> a
+    30:30:android.graphics.Bitmap access$1602(com.g0v.campaignfinance.MainActivity,android.graphics.Bitmap) -> a
+    30:30:android.graphics.Bitmap access$1600(com.g0v.campaignfinance.MainActivity) -> m
+    30:30:com.g0v.campaignfinance.model.CellCount access$702(com.g0v.campaignfinance.MainActivity,com.g0v.campaignfinance.model.CellCount) -> a
+    30:30:com.g0v.campaignfinance.controller.OcrController access$1700(com.g0v.campaignfinance.MainActivity) -> n
+    30:30:void access$1800(com.g0v.campaignfinance.MainActivity,java.lang.String) -> c
 com.g0v.campaignfinance.MainActivity$1 -> a:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    109:113:void onClick(android.view.View) -> onClick
+    112:116:void onClick(android.view.View) -> onClick
 com.g0v.campaignfinance.MainActivity$10 -> b:
+    android.app.AlertDialog val$quickInputDialog -> a
+    com.g0v.campaignfinance.MainActivity this$0 -> b
+    286:294:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.g0v.campaignfinance.MainActivity$11 -> c:
     android.widget.EditText val$editText -> a
     com.g0v.campaignfinance.MainActivity this$0 -> b
-    308:309:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$11 -> c:
-    com.g0v.campaignfinance.MainActivity this$0 -> a
-    318:318:void onClick(android.content.DialogInterface,int) -> onClick
+    323:324:void onClick(android.view.View) -> onClick
 com.g0v.campaignfinance.MainActivity$12 -> d:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    327:327:void onClick(android.content.DialogInterface,int) -> onClick
+    333:333:void onClick(android.content.DialogInterface,int) -> onClick
 com.g0v.campaignfinance.MainActivity$13 -> e:
+    com.g0v.campaignfinance.MainActivity this$0 -> a
+    342:342:void onClick(android.content.DialogInterface,int) -> onClick
+com.g0v.campaignfinance.MainActivity$14 -> f:
     android.app.AlertDialog val$inputDialog -> a
     com.g0v.campaignfinance.MainActivity this$0 -> b
-    338:342:void onFocusChange(android.view.View,boolean) -> onFocusChange
-com.g0v.campaignfinance.MainActivity$14 -> f:
+    353:357:void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.g0v.campaignfinance.MainActivity$15 -> g:
     android.app.AlertDialog val$inputDialog -> a
     android.widget.EditText val$editText -> b
     com.g0v.campaignfinance.MainActivity this$0 -> c
-    353:374:void onShow(android.content.DialogInterface) -> onShow
-com.g0v.campaignfinance.MainActivity$14$1 -> g:
-    com.g0v.campaignfinance.MainActivity$14 this$1 -> a
-    359:372:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$2 -> h:
+    368:389:void onShow(android.content.DialogInterface) -> onShow
+com.g0v.campaignfinance.MainActivity$15$1 -> h:
+    com.g0v.campaignfinance.MainActivity$15 this$1 -> a
+    374:387:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$2 -> i:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    122:126:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$3 -> i:
+    125:129:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$3 -> j:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    135:136:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$4 -> j:
+    138:139:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$4 -> k:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    146:147:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$5 -> k:
+    149:150:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$5 -> l:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    156:160:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$6 -> l:
+    159:163:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$6 -> m:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    169:172:void onClick(android.view.View) -> onClick
-com.g0v.campaignfinance.MainActivity$7 -> m:
+    172:175:void onClick(android.view.View) -> onClick
+com.g0v.campaignfinance.MainActivity$7 -> n:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    193:214:boolean onMenuItemClick(android.view.MenuItem) -> onMenuItemClick
-com.g0v.campaignfinance.MainActivity$8 -> n:
+    196:217:boolean onMenuItemClick(android.view.MenuItem) -> onMenuItemClick
+com.g0v.campaignfinance.MainActivity$8 -> o:
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    242:242:void onClick(android.content.DialogInterface,int) -> onClick
-com.g0v.campaignfinance.MainActivity$9 -> o:
-    android.app.AlertDialog val$quickInputDialog -> a
-    com.g0v.campaignfinance.MainActivity this$0 -> b
-    271:279:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.g0v.campaignfinance.MainActivity$GetCellCountTask -> p:
+    227:229:boolean onMenuItemClick(android.view.MenuItem) -> onMenuItemClick
+com.g0v.campaignfinance.MainActivity$9 -> p:
+    com.g0v.campaignfinance.MainActivity this$0 -> a
+    257:257:void onClick(android.content.DialogInterface,int) -> onClick
+com.g0v.campaignfinance.MainActivity$GetCellCountTask -> q:
     boolean isAnyException -> b
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    558:559:void onPreExecute() -> onPreExecute
-    566:582:java.lang.Void doInBackground(java.lang.Void[]) -> a
-    589:610:void onPostExecute(java.lang.Void) -> a
-    546:546:void onPostExecute(java.lang.Object) -> onPostExecute
-    546:546:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.g0v.campaignfinance.MainActivity$PollCellTask -> q:
+    573:574:void onPreExecute() -> onPreExecute
+    581:597:java.lang.Void doInBackground(java.lang.Void[]) -> a
+    604:625:void onPostExecute(java.lang.Void) -> a
+    561:561:void onPostExecute(java.lang.Object) -> onPostExecute
+    561:561:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.g0v.campaignfinance.MainActivity$PollCellTask -> r:
     boolean isAnyException -> b
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    476:484:void onPreExecute() -> onPreExecute
-    491:518:java.lang.Void doInBackground(java.lang.Void[]) -> a
-    525:543:void onPostExecute(java.lang.Void) -> a
-    464:464:void onPostExecute(java.lang.Object) -> onPostExecute
-    464:464:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.g0v.campaignfinance.MainActivity$PopupInputDialogTask -> r:
+    491:499:void onPreExecute() -> onPreExecute
+    506:533:java.lang.Void doInBackground(java.lang.Void[]) -> a
+    540:558:void onPostExecute(java.lang.Void) -> a
+    479:479:void onPostExecute(java.lang.Object) -> onPostExecute
+    479:479:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.g0v.campaignfinance.MainActivity$PopupInputDialogTask -> s:
     boolean isAnyException -> b
     java.lang.String defaultAnswer -> c
     com.g0v.campaignfinance.MainActivity this$0 -> a
-    627:629:void onPreExecute() -> onPreExecute
-    634:645:java.lang.Void doInBackground(java.lang.Void[]) -> a
-    652:662:void onPostExecute(java.lang.Void) -> a
-    614:614:void onPostExecute(java.lang.Object) -> onPostExecute
-    614:614:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.g0v.campaignfinance.R -> com.g0v.campaignfinance.R:
-com.g0v.campaignfinance.R$attr -> com.g0v.campaignfinance.R$attr:
-com.g0v.campaignfinance.R$color -> com.g0v.campaignfinance.R$color:
+    642:644:void onPreExecute() -> onPreExecute
+    649:660:java.lang.Void doInBackground(java.lang.Void[]) -> a
+    667:677:void onPostExecute(java.lang.Void) -> a
+    629:629:void onPostExecute(java.lang.Object) -> onPostExecute
+    629:629:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.g0v.campaignfinance.StartActivity -> com.g0v.campaignfinance.StartActivity:
+    java.lang.String TAG -> a
+    android.widget.ProgressBar progressBar -> b
+    35:45:void onCreate(android.os.Bundle) -> onCreate
+    52:57:void startScheduleCheckService() -> a
+    62:64:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    70:73:void onStop() -> onStop
+    77:84:void gotoMainActivity() -> b
+    92:92:void logDebug(java.lang.String) -> a
+    25:25:void access$100(com.g0v.campaignfinance.StartActivity,java.lang.String) -> a
+    25:25:android.widget.ProgressBar access$200(com.g0v.campaignfinance.StartActivity) -> a
+com.g0v.campaignfinance.StartActivity$1 -> t:
+com.g0v.campaignfinance.StartActivity$CreateCampaignFinanceControllerTask -> u:
+    boolean isIOException -> b
+    java.lang.String errorMessage -> c
+    com.g0v.campaignfinance.StartActivity this$0 -> a
+    110:112:void onPreExecute() -> onPreExecute
+    120:141:java.util.Map doInBackground(java.lang.Void[]) -> a
+    152:161:boolean checkNetwork() -> a
+    168:185:void onProgressUpdate(java.lang.Integer[]) -> a
+    190:209:void onPostExecute(java.util.Map) -> a
+    99:99:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    99:99:void onPostExecute(java.lang.Object) -> onPostExecute
+    99:99:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.g0v.campaignfinance.api.CampaignFinanceApi -> com.g0v.campaignfinance.api.CampaignFinanceApi:
+    java.util.regex.Pattern PATTERN_S_TOKEN -> a
+    java.util.regex.Pattern PATTERN_HOST -> b
+    com.google.gson.Gson gson -> c
+    java.lang.reflect.Type cellListType -> d
+    java.lang.String sToken -> e
+    java.lang.String apiKey -> f
+    49:51:com.g0v.campaignfinance.model.CellCount getCellCount() -> getCellCount
+    56:58:java.util.List getRandoms() -> getRandoms
+    63:66:java.lang.String getSToken() -> getSToken
+    79:84:boolean fillCellIsRight(com.g0v.campaignfinance.model.Cell) -> fillCellIsRight
+    96:96:boolean fillCellIsEmpty(com.g0v.campaignfinance.model.Cell) -> fillCellIsEmpty
+    110:112:boolean reportUnclear(com.g0v.campaignfinance.model.Cell) -> reportUnclear
+    123:125:boolean fillCell(com.g0v.campaignfinance.model.Cell,java.lang.String) -> fillCell
+    131:166:boolean jsoupPost(java.lang.String,java.lang.String[]) -> a
+    172:202:java.lang.String jsoupGet(java.lang.String) -> a
+    211:211:void logDebug(java.lang.String) -> b
+    215:215:java.lang.String matchStoken(java.lang.String) -> c
+    220:220:java.lang.String matchHost(java.lang.String) -> d
+    229:242:java.lang.String getMatch(java.lang.String,java.util.regex.Pattern) -> a
+    248:265:void main(java.lang.String[]) -> main
+com.g0v.campaignfinance.api.CampaignFinanceApi$1 -> v:
+    com.g0v.campaignfinance.api.CampaignFinanceApi this$0 -> a
+com.g0v.campaignfinance.api.CompaignFinanceApiKey -> com.g0v.campaignfinance.api.CompaignFinanceApiKey:
+    java.lang.String VALUE -> VALUE
+com.g0v.campaignfinance.controller.CampaignFinanceController -> com.g0v.campaignfinance.controller.CampaignFinanceController:
+    com.g0v.campaignfinance.controller.CampaignFinanceController sInstance -> sInstance
+    com.g0v.campaignfinance.api.CampaignFinanceApi api -> a
+    java.util.Queue cellList -> b
+    com.g0v.campaignfinance.model.CellCount cellCount -> c
+    27:33:com.g0v.campaignfinance.controller.CampaignFinanceController getInstance() -> getInstance
+    47:49:void initCellList() -> a
+    59:67:com.g0v.campaignfinance.model.Cell poolCell() -> poolCell
+    72:87:void openThreadToAddCellIntoListFromApi(int) -> a
+    91:102:void addCellIntoListFromApi(int) -> b
+    106:118:void openThreadToPreloadCellImages(java.util.List) -> a
+    122:123:com.g0v.campaignfinance.model.CellCount getCellCount() -> getCellCount
+    128:148:void openThreadToFillCell(com.g0v.campaignfinance.model.Cell,java.lang.String) -> openThreadToFillCell
+    152:172:void openThreadToFillCellIsEmpty(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellIsEmpty
+    176:196:void openThreadToFillCellIsRight(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellIsRight
+    200:220:void openThreadToFillCellNotClear(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellNotClear
+    224:230:boolean canCallApi() -> b
+    240:240:void logDebug(java.lang.String) -> a
+    16:16:void access$000(com.g0v.campaignfinance.controller.CampaignFinanceController,int) -> a
+    16:16:com.g0v.campaignfinance.api.CampaignFinanceApi access$100(com.g0v.campaignfinance.controller.CampaignFinanceController) -> a
+com.g0v.campaignfinance.controller.CampaignFinanceController$1 -> w:
+    int val$expectCellListSize -> a
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
+    79:85:void run() -> run
+com.g0v.campaignfinance.controller.CampaignFinanceController$2 -> x:
+    java.util.List val$inCellList -> a
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
+    111:116:void run() -> run
+com.g0v.campaignfinance.controller.CampaignFinanceController$3 -> y:
+    com.g0v.campaignfinance.model.Cell val$cell -> a
+    java.lang.String val$answer -> b
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> c
+    140:146:void run() -> run
+com.g0v.campaignfinance.controller.CampaignFinanceController$4 -> z:
+    com.g0v.campaignfinance.model.Cell val$cell -> a
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
+    164:170:void run() -> run
+com.g0v.campaignfinance.controller.CampaignFinanceController$5 -> aa:
+    com.g0v.campaignfinance.model.Cell val$cell -> a
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
+    188:194:void run() -> run
+com.g0v.campaignfinance.controller.CampaignFinanceController$6 -> ab:
+    com.g0v.campaignfinance.model.Cell val$cell -> a
+    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
+    212:218:void run() -> run
+com.g0v.campaignfinance.controller.OcrController -> com.g0v.campaignfinance.controller.OcrController:
+    java.util.regex.Pattern PATTERN_DATE -> a
+    java.util.regex.Pattern PATTERN_MONEY -> b
+    java.text.NumberFormat FORMAT_MONEY -> c
+    com.g0v.campaignfinance.controller.OcrController sInstance -> sInstance
+    com.googlecode.tesseract.android.TessBaseAPI baseApi -> d
+    android.content.Context context -> e
+    android.content.res.AssetManager assetManager -> f
+    java.lang.String trainedDataFilePath -> g
+    java.lang.String tessDataParentPath -> h
+    51:57:com.g0v.campaignfinance.controller.OcrController getInstance(android.content.Context) -> getInstance
+    94:113:void copyTrainedDataToSdCard() -> a
+    116:121:void copyFile(java.io.InputStream,java.io.OutputStream) -> a
+    131:170:java.lang.String recognize(com.g0v.campaignfinance.model.Cell) -> recognize
+    175:188:java.lang.String findDate(java.lang.String) -> a
+    194:214:java.lang.String findMoney(java.lang.String) -> b
+    243:247:com.googlecode.leptonica.android.Pix processImage(android.graphics.Bitmap) -> a
+    256:256:void logDebug(java.lang.String) -> c
+com.g0v.campaignfinance.model.Cell -> com.g0v.campaignfinance.model.Cell:
+    java.lang.String ans -> ans
+    int count -> count
+    int id -> id
+    java.lang.String imgUrl -> imgUrl
+    int page -> page
+    int x -> x
+    int y -> y
+    android.graphics.Bitmap bitmap -> bitmap
+    45:45:int getY() -> getY
+    50:50:java.lang.String getAns() -> getAns
+    55:55:int getCount() -> getCount
+    60:60:int getId() -> getId
+    65:65:java.lang.String getImgUrl() -> getImgUrl
+    70:70:int getPage() -> getPage
+    75:75:int getX() -> getX
+    85:98:android.graphics.Bitmap getBitmap() -> getBitmap
+    104:104:java.lang.String toString() -> toString
+com.g0v.campaignfinance.model.CellCount -> com.g0v.campaignfinance.model.CellCount:
+    java.lang.String count -> count
+    java.lang.String todo -> todo
+    long done -> done
+    23:23:java.lang.Long getCount() -> getCount
+    28:28:java.lang.Long getTodo() -> getTodo
+    33:33:java.lang.Long getDone() -> getDone
+    39:39:java.lang.String toString() -> toString
+com.g0v.campaignfinance.service.BootCompletedReceiver -> com.g0v.campaignfinance.service.BootCompletedReceiver:
+    java.lang.String TAG -> a
+    25:32:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.g0v.campaignfinance.service.CheckReceiver -> com.g0v.campaignfinance.service.CheckReceiver:
+    java.lang.String TAG -> a
+    android.os.Handler handler -> b
+    android.content.Context context -> c
+    39:43:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    51:51:void logDebug(java.lang.String) -> a
+    158:213:void showNotification(com.g0v.campaignfinance.model.CellCount) -> a
+    28:28:void access$000(com.g0v.campaignfinance.service.CheckReceiver,java.lang.String) -> a
+    28:28:android.content.Context access$100(com.g0v.campaignfinance.service.CheckReceiver) -> a
+    28:28:java.lang.String access$200() -> a
+    28:28:void access$300(com.g0v.campaignfinance.service.CheckReceiver,com.g0v.campaignfinance.model.CellCount) -> a
+com.g0v.campaignfinance.service.CheckReceiver$1 -> ac:
+    com.g0v.campaignfinance.model.CellCount val$cellCount -> a
+    com.g0v.campaignfinance.service.CheckReceiver this$0 -> b
+    166:211:void run() -> run
+com.g0v.campaignfinance.service.CheckReceiver$GetCellCountTask -> ad:
+    boolean isAnyException -> b
+    java.lang.String errorMessage -> c
+    com.g0v.campaignfinance.controller.CampaignFinanceController campaignFinanceController -> d
+    com.g0v.campaignfinance.model.CellCount cellCount -> e
+    com.g0v.campaignfinance.service.CheckReceiver this$0 -> a
+    69:70:void onPreExecute() -> onPreExecute
+    75:103:java.lang.Void doInBackground(java.lang.Void[]) -> a
+    114:123:boolean checkNetwork() -> a
+    131:153:void onPostExecute(java.lang.Void) -> a
+    53:53:void onPostExecute(java.lang.Object) -> onPostExecute
+    53:53:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.g0v.campaignfinance.service.ScheduleCheckService -> com.g0v.campaignfinance.service.ScheduleCheckService:
+    java.lang.String TAG -> a
+    30:70:void onCreate() -> onCreate
+    75:78:void onDestroy() -> onDestroy
+    83:85:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    91:91:android.os.IBinder onBind(android.content.Intent) -> onBind
+    100:100:void logDebug(java.lang.String) -> a
+com.g0v.campaignfinance1.BuildConfig -> com.g0v.campaignfinance1.BuildConfig:
+    boolean DEBUG -> DEBUG
+com.g0v.campaignfinance1.R -> com.g0v.campaignfinance1.R:
+com.g0v.campaignfinance1.R$attr -> com.g0v.campaignfinance1.R$attr:
+com.g0v.campaignfinance1.R$color -> com.g0v.campaignfinance1.R$color:
     int apptheme_color -> apptheme_color
-com.g0v.campaignfinance.R$dimen -> com.g0v.campaignfinance.R$dimen:
+com.g0v.campaignfinance1.R$dimen -> com.g0v.campaignfinance1.R$dimen:
     int activity_horizontal_margin -> activity_horizontal_margin
     int activity_vertical_margin -> activity_vertical_margin
     int tab_host_default_height -> tab_host_default_height
-com.g0v.campaignfinance.R$drawable -> com.g0v.campaignfinance.R$drawable:
+com.g0v.campaignfinance1.R$drawable -> com.g0v.campaignfinance1.R$drawable:
     int ab_transparent_apptheme -> ab_transparent_apptheme
     int apptheme_activated_background_holo_dark -> apptheme_activated_background_holo_dark
     int apptheme_btn_check_holo_dark -> apptheme_btn_check_holo_dark
@@ -5165,7 +5345,7 @@ com.g0v.campaignfinance.R$drawable -> com.g0v.campaignfinance.R$drawable:
     int apptheme_textfield_focused_holo_dark -> apptheme_textfield_focused_holo_dark
     int ic_launcher -> ic_launcher
     int ic_stat_alert -> ic_stat_alert
-com.g0v.campaignfinance.R$id -> com.g0v.campaignfinance.R$id:
+com.g0v.campaignfinance1.R$id -> com.g0v.campaignfinance1.R$id:
     int RelativeLayout1 -> RelativeLayout1
     int clearImageButton -> clearImageButton
     int currentAnswerTextView -> currentAnswerTextView
@@ -5179,6 +5359,7 @@ com.g0v.campaignfinance.R$id -> com.g0v.campaignfinance.R$id:
     int isRightButton -> isRightButton
     int linkToFanPageTextView -> linkToFanPageTextView
     int notClearButton -> notClearButton
+    int openPrivacyPolicyMenuItem -> openPrivacyPolicyMenuItem
     int progressBar -> progressBar
     int progressBar1 -> progressBar1
     int quickInputButton -> quickInputButton
@@ -5186,19 +5367,20 @@ com.g0v.campaignfinance.R$id -> com.g0v.campaignfinance.R$id:
     int quickInputDialogItemlistView -> quickInputDialogItemlistView
     int shareItem -> shareItem
     int textView -> textView
-com.g0v.campaignfinance.R$layout -> com.g0v.campaignfinance.R$layout:
+com.g0v.campaignfinance1.R$layout -> com.g0v.campaignfinance1.R$layout:
     int activity_main -> activity_main
     int activity_start -> activity_start
     int apptheme_tab_indicator_holo -> apptheme_tab_indicator_holo
     int dialog_input -> dialog_input
     int dialog_quick_input -> dialog_quick_input
-com.g0v.campaignfinance.R$menu -> com.g0v.campaignfinance.R$menu:
+com.g0v.campaignfinance1.R$menu -> com.g0v.campaignfinance1.R$menu:
     int main -> main
-com.g0v.campaignfinance.R$raw -> com.g0v.campaignfinance.R$raw:
+com.g0v.campaignfinance1.R$raw -> com.g0v.campaignfinance1.R$raw:
     int smb_1_up -> smb_1_up
     int smb_coin -> smb_coin
     int smb_kick -> smb_kick
-com.g0v.campaignfinance.R$string -> com.g0v.campaignfinance.R$string:
+com.g0v.campaignfinance1.R$string -> com.g0v.campaignfinance1.R$string:
+    int action_open_privacy_policy -> action_open_privacy_policy
     int app_name -> app_name
     int cancel -> cancel
     int current_answer -> current_answer
@@ -5236,7 +5418,8 @@ com.g0v.campaignfinance.R$string -> com.g0v.campaignfinance.R$string:
     int share_chooser_title -> share_chooser_title
     int share_subject -> share_subject
     int share_subject_with_todo -> share_subject_with_todo
-com.g0v.campaignfinance.R$style -> com.g0v.campaignfinance.R$style:
+    int url_privacy_policy -> url_privacy_policy
+com.g0v.campaignfinance1.R$style -> com.g0v.campaignfinance1.R$style:
     int ActionBar_Transparent_AppTheme -> ActionBar_Transparent_AppTheme
     int AppTheme -> AppTheme
     int AutoCompleteTextViewAppTheme -> AutoCompleteTextViewAppTheme
@@ -5256,182 +5439,7 @@ com.g0v.campaignfinance.R$style -> com.g0v.campaignfinance.R$style:
     int TabAppTheme -> TabAppTheme
     int TabTextAppTheme -> TabTextAppTheme
     int ToggleAppTheme -> ToggleAppTheme
-com.g0v.campaignfinance.StartActivity -> com.g0v.campaignfinance.StartActivity:
-    java.lang.String TAG -> a
-    android.widget.ProgressBar progressBar -> b
-    34:44:void onCreate(android.os.Bundle) -> onCreate
-    51:56:void startScheduleCheckService() -> a
-    61:63:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-    69:72:void onStop() -> onStop
-    76:83:void gotoMainActivity() -> b
-    91:91:void logDebug(java.lang.String) -> a
-    24:24:void access$100(com.g0v.campaignfinance.StartActivity,java.lang.String) -> a
-    24:24:android.widget.ProgressBar access$200(com.g0v.campaignfinance.StartActivity) -> a
-com.g0v.campaignfinance.StartActivity$1 -> s:
-com.g0v.campaignfinance.StartActivity$CreateCampaignFinanceControllerTask -> t:
-    boolean isIOException -> b
-    java.lang.String errorMessage -> c
-    com.g0v.campaignfinance.StartActivity this$0 -> a
-    109:111:void onPreExecute() -> onPreExecute
-    119:140:java.util.Map doInBackground(java.lang.Void[]) -> a
-    151:160:boolean checkNetwork() -> a
-    167:184:void onProgressUpdate(java.lang.Integer[]) -> a
-    189:208:void onPostExecute(java.util.Map) -> a
-    98:98:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
-    98:98:void onPostExecute(java.lang.Object) -> onPostExecute
-    98:98:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.g0v.campaignfinance.api.CampaignFinanceApi -> com.g0v.campaignfinance.api.CampaignFinanceApi:
-    java.util.regex.Pattern PATTERN_S_TOKEN -> a
-    java.util.regex.Pattern PATTERN_HOST -> b
-    com.google.gson.Gson gson -> c
-    java.lang.reflect.Type cellListType -> d
-    java.lang.String sToken -> e
-    java.lang.String apiKey -> f
-    49:51:com.g0v.campaignfinance.model.CellCount getCellCount() -> getCellCount
-    56:58:java.util.List getRandoms() -> getRandoms
-    63:66:java.lang.String getSToken() -> getSToken
-    79:84:boolean fillCellIsRight(com.g0v.campaignfinance.model.Cell) -> fillCellIsRight
-    96:96:boolean fillCellIsEmpty(com.g0v.campaignfinance.model.Cell) -> fillCellIsEmpty
-    110:112:boolean reportUnclear(com.g0v.campaignfinance.model.Cell) -> reportUnclear
-    123:125:boolean fillCell(com.g0v.campaignfinance.model.Cell,java.lang.String) -> fillCell
-    131:166:boolean jsoupPost(java.lang.String,java.lang.String[]) -> a
-    172:202:java.lang.String jsoupGet(java.lang.String) -> a
-    211:211:void logDebug(java.lang.String) -> b
-    215:215:java.lang.String matchStoken(java.lang.String) -> c
-    220:220:java.lang.String matchHost(java.lang.String) -> d
-    229:242:java.lang.String getMatch(java.lang.String,java.util.regex.Pattern) -> a
-    248:265:void main(java.lang.String[]) -> main
-com.g0v.campaignfinance.api.CampaignFinanceApi$1 -> u:
-    com.g0v.campaignfinance.api.CampaignFinanceApi this$0 -> a
-com.g0v.campaignfinance.api.CompaignFinanceApiKey -> com.g0v.campaignfinance.api.CompaignFinanceApiKey:
-    java.lang.String VALUE -> VALUE
-com.g0v.campaignfinance.controller.CampaignFinanceController -> com.g0v.campaignfinance.controller.CampaignFinanceController:
-    com.g0v.campaignfinance.controller.CampaignFinanceController sInstance -> sInstance
-    com.g0v.campaignfinance.api.CampaignFinanceApi api -> a
-    java.util.Queue cellList -> b
-    com.g0v.campaignfinance.model.CellCount cellCount -> c
-    27:33:com.g0v.campaignfinance.controller.CampaignFinanceController getInstance() -> getInstance
-    47:49:void initCellList() -> a
-    59:67:com.g0v.campaignfinance.model.Cell poolCell() -> poolCell
-    72:87:void openThreadToAddCellIntoListFromApi(int) -> a
-    91:102:void addCellIntoListFromApi(int) -> b
-    106:118:void openThreadToPreloadCellImages(java.util.List) -> a
-    122:123:com.g0v.campaignfinance.model.CellCount getCellCount() -> getCellCount
-    128:148:void openThreadToFillCell(com.g0v.campaignfinance.model.Cell,java.lang.String) -> openThreadToFillCell
-    152:172:void openThreadToFillCellIsEmpty(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellIsEmpty
-    176:196:void openThreadToFillCellIsRight(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellIsRight
-    200:220:void openThreadToFillCellNotClear(com.g0v.campaignfinance.model.Cell) -> openThreadToFillCellNotClear
-    224:230:boolean canCallApi() -> b
-    240:240:void logDebug(java.lang.String) -> a
-    16:16:void access$000(com.g0v.campaignfinance.controller.CampaignFinanceController,int) -> a
-    16:16:com.g0v.campaignfinance.api.CampaignFinanceApi access$100(com.g0v.campaignfinance.controller.CampaignFinanceController) -> a
-com.g0v.campaignfinance.controller.CampaignFinanceController$1 -> v:
-    int val$expectCellListSize -> a
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
-    79:85:void run() -> run
-com.g0v.campaignfinance.controller.CampaignFinanceController$2 -> w:
-    java.util.List val$inCellList -> a
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
-    111:116:void run() -> run
-com.g0v.campaignfinance.controller.CampaignFinanceController$3 -> x:
-    com.g0v.campaignfinance.model.Cell val$cell -> a
-    java.lang.String val$answer -> b
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> c
-    140:146:void run() -> run
-com.g0v.campaignfinance.controller.CampaignFinanceController$4 -> y:
-    com.g0v.campaignfinance.model.Cell val$cell -> a
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
-    164:170:void run() -> run
-com.g0v.campaignfinance.controller.CampaignFinanceController$5 -> z:
-    com.g0v.campaignfinance.model.Cell val$cell -> a
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
-    188:194:void run() -> run
-com.g0v.campaignfinance.controller.CampaignFinanceController$6 -> aa:
-    com.g0v.campaignfinance.model.Cell val$cell -> a
-    com.g0v.campaignfinance.controller.CampaignFinanceController this$0 -> b
-    212:218:void run() -> run
-com.g0v.campaignfinance.controller.OcrController -> com.g0v.campaignfinance.controller.OcrController:
-    java.util.regex.Pattern PATTERN_DATE -> a
-    java.util.regex.Pattern PATTERN_MONEY -> b
-    java.text.NumberFormat FORMAT_MONEY -> c
-    com.g0v.campaignfinance.controller.OcrController sInstance -> sInstance
-    com.googlecode.tesseract.android.TessBaseAPI baseApi -> d
-    android.content.Context context -> e
-    android.content.res.AssetManager assetManager -> f
-    java.lang.String trainedDataFilePath -> g
-    java.lang.String tessDataParentPath -> h
-    51:57:com.g0v.campaignfinance.controller.OcrController getInstance(android.content.Context) -> getInstance
-    94:113:void copyTrainedDataToSdCard() -> a
-    116:121:void copyFile(java.io.InputStream,java.io.OutputStream) -> a
-    131:170:java.lang.String recognize(com.g0v.campaignfinance.model.Cell) -> recognize
-    175:188:java.lang.String findDate(java.lang.String) -> a
-    194:214:java.lang.String findMoney(java.lang.String) -> b
-    243:247:com.googlecode.leptonica.android.Pix processImage(android.graphics.Bitmap) -> a
-    256:256:void logDebug(java.lang.String) -> c
-com.g0v.campaignfinance.model.Cell -> com.g0v.campaignfinance.model.Cell:
-    java.lang.String ans -> ans
-    int count -> count
-    int id -> id
-    java.lang.String imgUrl -> imgUrl
-    int page -> page
-    int x -> x
-    int y -> y
-    android.graphics.Bitmap bitmap -> bitmap
-    45:45:int getY() -> getY
-    50:50:java.lang.String getAns() -> getAns
-    55:55:int getCount() -> getCount
-    60:60:int getId() -> getId
-    65:65:java.lang.String getImgUrl() -> getImgUrl
-    70:70:int getPage() -> getPage
-    75:75:int getX() -> getX
-    85:98:android.graphics.Bitmap getBitmap() -> getBitmap
-    104:104:java.lang.String toString() -> toString
-com.g0v.campaignfinance.model.CellCount -> com.g0v.campaignfinance.model.CellCount:
-    java.lang.String count -> count
-    java.lang.String todo -> todo
-    long done -> done
-    23:23:java.lang.Long getCount() -> getCount
-    28:28:java.lang.Long getTodo() -> getTodo
-    33:33:java.lang.Long getDone() -> getDone
-    39:39:java.lang.String toString() -> toString
-com.g0v.campaignfinance.service.BootCompletedReceiver -> com.g0v.campaignfinance.service.BootCompletedReceiver:
-    java.lang.String TAG -> a
-    25:32:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.g0v.campaignfinance.service.CheckReceiver -> com.g0v.campaignfinance.service.CheckReceiver:
-    java.lang.String TAG -> a
-    android.os.Handler handler -> b
-    android.content.Context context -> c
-    39:43:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    51:51:void logDebug(java.lang.String) -> a
-    158:213:void showNotification(com.g0v.campaignfinance.model.CellCount) -> a
-    28:28:void access$000(com.g0v.campaignfinance.service.CheckReceiver,java.lang.String) -> a
-    28:28:android.content.Context access$100(com.g0v.campaignfinance.service.CheckReceiver) -> a
-    28:28:java.lang.String access$200() -> a
-    28:28:void access$300(com.g0v.campaignfinance.service.CheckReceiver,com.g0v.campaignfinance.model.CellCount) -> a
-com.g0v.campaignfinance.service.CheckReceiver$1 -> ab:
-    com.g0v.campaignfinance.model.CellCount val$cellCount -> a
-    com.g0v.campaignfinance.service.CheckReceiver this$0 -> b
-    166:211:void run() -> run
-com.g0v.campaignfinance.service.CheckReceiver$GetCellCountTask -> ac:
-    boolean isAnyException -> b
-    java.lang.String errorMessage -> c
-    com.g0v.campaignfinance.controller.CampaignFinanceController campaignFinanceController -> d
-    com.g0v.campaignfinance.model.CellCount cellCount -> e
-    com.g0v.campaignfinance.service.CheckReceiver this$0 -> a
-    69:70:void onPreExecute() -> onPreExecute
-    75:103:java.lang.Void doInBackground(java.lang.Void[]) -> a
-    114:123:boolean checkNetwork() -> a
-    131:153:void onPostExecute(java.lang.Void) -> a
-    53:53:void onPostExecute(java.lang.Object) -> onPostExecute
-    53:53:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-com.g0v.campaignfinance.service.ScheduleCheckService -> com.g0v.campaignfinance.service.ScheduleCheckService:
-    java.lang.String TAG -> a
-    30:70:void onCreate() -> onCreate
-    75:78:void onDestroy() -> onDestroy
-    83:85:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
-    91:91:android.os.IBinder onBind(android.content.Intent) -> onBind
-    100:100:void logDebug(java.lang.String) -> a
-com.google.gson.DefaultDateTypeAdapter -> ad:
+com.google.gson.DefaultDateTypeAdapter -> ae:
     java.text.DateFormat enUsFormat -> a
     java.text.DateFormat localFormat -> b
     java.text.DateFormat iso8601Format -> c
@@ -5518,36 +5526,36 @@ com.google.gson.Gson -> com.google.gson.Gson:
     856:859:java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.reflect.Type) -> fromJson
     889:894:java.lang.String toString() -> toString
     98:98:void access$000(com.google.gson.Gson,double) -> a
-com.google.gson.Gson$1 -> ae:
+com.google.gson.Gson$1 -> af:
     com.google.gson.Gson this$0 -> a
     113:113:java.util.Map initialValue() -> a
     111:111:java.lang.Object initialValue() -> initialValue
-com.google.gson.Gson$2 -> af:
+com.google.gson.Gson$2 -> ag:
     com.google.gson.Gson this$0 -> a
     131:131:java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type) -> deserialize
-com.google.gson.Gson$3 -> ag:
+com.google.gson.Gson$3 -> ah:
     com.google.gson.Gson this$0 -> a
     137:137:com.google.gson.JsonElement serialize(java.lang.Object) -> serialize
     140:140:com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type) -> serialize
-com.google.gson.Gson$4 -> ah:
+com.google.gson.Gson$4 -> ai:
     com.google.gson.Gson this$0 -> a
     257:261:java.lang.Double read(com.google.gson.stream.JsonReader) -> a
     264:271:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     255:255:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     255:255:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.Gson$5 -> ai:
+com.google.gson.Gson$5 -> aj:
     com.google.gson.Gson this$0 -> a
     281:285:java.lang.Float read(com.google.gson.stream.JsonReader) -> a
     288:295:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     279:279:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     279:279:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.Gson$6 -> aj:
+com.google.gson.Gson$6 -> ak:
     com.google.gson.Gson this$0 -> a
     313:317:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     320:325:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     311:311:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     311:311:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.Gson$FutureTypeAdapter -> ak:
+com.google.gson.Gson$FutureTypeAdapter -> al:
     com.google.gson.TypeAdapter delegate -> a
     866:870:void setDelegate(com.google.gson.TypeAdapter) -> a
     873:876:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
@@ -5720,7 +5728,7 @@ com.google.gson.LongSerializationPolicy$1 -> com.google.gson.LongSerializationPo
     36:36:com.google.gson.JsonElement serialize(java.lang.Long) -> serialize
 com.google.gson.LongSerializationPolicy$2 -> com.google.gson.LongSerializationPolicy$2:
     47:47:com.google.gson.JsonElement serialize(java.lang.Long) -> serialize
-com.google.gson.TreeTypeAdapter -> al:
+com.google.gson.TreeTypeAdapter -> am:
     com.google.gson.JsonSerializer serializer -> a
     com.google.gson.JsonDeserializer deserializer -> b
     com.google.gson.Gson gson -> c
@@ -5733,8 +5741,8 @@ com.google.gson.TreeTypeAdapter -> al:
     85:85:com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken,java.lang.Object) -> a
     95:96:com.google.gson.TypeAdapterFactory newFactoryWithMatchRawType(com.google.gson.reflect.TypeToken,java.lang.Object) -> b
     105:105:com.google.gson.TypeAdapterFactory newTypeHierarchyFactory(java.lang.Class,java.lang.Object) -> a
-com.google.gson.TreeTypeAdapter$1 -> am:
-com.google.gson.TreeTypeAdapter$SingleTypeFactory -> an:
+com.google.gson.TreeTypeAdapter$1 -> an:
+com.google.gson.TreeTypeAdapter$SingleTypeFactory -> ao:
     com.google.gson.reflect.TypeToken exactType -> a
     boolean matchRawType -> b
     java.lang.Class hierarchyType -> c
@@ -5751,7 +5759,7 @@ com.google.gson.TypeAdapter -> com.google.gson.TypeAdapter:
     255:256:java.lang.Object fromJson(java.io.Reader) -> fromJson
     269:269:java.lang.Object fromJson(java.lang.String) -> fromJson
     280:283:java.lang.Object fromJsonTree(com.google.gson.JsonElement) -> fromJsonTree
-com.google.gson.TypeAdapter$1 -> ao:
+com.google.gson.TypeAdapter$1 -> ap:
     com.google.gson.TypeAdapter this$0 -> a
     188:193:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
     195:199:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
@@ -5827,31 +5835,31 @@ com.google.gson.internal.ConstructorConstructor -> com.google.gson.internal.Cons
     116:154:com.google.gson.internal.ObjectConstructor newDefaultImplementationConstructor(java.lang.Class) -> b
     159:159:com.google.gson.internal.ObjectConstructor newUnsafeAllocator(java.lang.reflect.Type,java.lang.Class) -> a
     175:175:java.lang.String toString() -> toString
-com.google.gson.internal.ConstructorConstructor$1 -> ap:
+com.google.gson.internal.ConstructorConstructor$1 -> aq:
     com.google.gson.InstanceCreator val$creator -> a
     java.lang.reflect.Type val$type -> b
     com.google.gson.internal.ConstructorConstructor this$0 -> c
     61:61:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$2 -> aq:
+com.google.gson.internal.ConstructorConstructor$2 -> ar:
     java.lang.reflect.Constructor val$constructor -> a
     com.google.gson.internal.ConstructorConstructor this$0 -> b
     90:101:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$3 -> ar:
+com.google.gson.internal.ConstructorConstructor$3 -> as:
     com.google.gson.internal.ConstructorConstructor this$0 -> a
     120:120:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$4 -> as:
+com.google.gson.internal.ConstructorConstructor$4 -> at:
     com.google.gson.internal.ConstructorConstructor this$0 -> a
     126:126:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$5 -> at:
+com.google.gson.internal.ConstructorConstructor$5 -> au:
     com.google.gson.internal.ConstructorConstructor this$0 -> a
     132:132:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$6 -> au:
+com.google.gson.internal.ConstructorConstructor$6 -> av:
     com.google.gson.internal.ConstructorConstructor this$0 -> a
     138:138:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$7 -> av:
+com.google.gson.internal.ConstructorConstructor$7 -> aw:
     com.google.gson.internal.ConstructorConstructor this$0 -> a
     148:148:java.lang.Object construct() -> construct
-com.google.gson.internal.ConstructorConstructor$8 -> aw:
+com.google.gson.internal.ConstructorConstructor$8 -> ax:
     com.google.gson.internal.UnsafeAllocator unsafeAllocator -> d
     java.lang.Class val$rawType -> a
     java.lang.reflect.Type val$type -> b
@@ -5881,7 +5889,7 @@ com.google.gson.internal.Excluder -> com.google.gson.internal.Excluder:
     233:239:boolean isValidSince(com.google.gson.annotations.Since) -> a
     243:249:boolean isValidUntil(com.google.gson.annotations.Until) -> a
     50:50:java.lang.Object clone() -> clone
-com.google.gson.internal.Excluder$1 -> ax:
+com.google.gson.internal.Excluder$1 -> ay:
     com.google.gson.TypeAdapter delegate -> f
     boolean val$skipDeserialize -> a
     boolean val$skipSerialize -> b
@@ -5915,15 +5923,15 @@ com.google.gson.internal.Streams -> com.google.gson.internal.Streams:
     40:60:com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader) -> parse
     68:69:void write(com.google.gson.JsonElement,com.google.gson.stream.JsonWriter) -> write
     72:72:java.io.Writer writerForAppendable(java.lang.Appendable) -> writerForAppendable
-com.google.gson.internal.Streams$1 -> ay:
-com.google.gson.internal.Streams$AppendableWriter -> az:
+com.google.gson.internal.Streams$1 -> az:
+com.google.gson.internal.Streams$AppendableWriter -> ba:
     java.lang.Appendable appendable -> a
     com.google.gson.internal.Streams$AppendableWriter$CurrentWrite currentWrite -> b
     88:90:void write(char[],int,int) -> write
     93:94:void write(int) -> write
     96:96:void flush() -> flush
     97:97:void close() -> close
-com.google.gson.internal.Streams$AppendableWriter$CurrentWrite -> ba:
+com.google.gson.internal.Streams$AppendableWriter$CurrentWrite -> bb:
     char[] chars -> a
     105:105:int length() -> length
     108:108:char charAt(int) -> charAt
@@ -5958,30 +5966,30 @@ com.google.gson.internal.StringMap -> com.google.gson.internal.StringMap:
     38:38:com.google.gson.internal.StringMap$LinkedEntry access$300(com.google.gson.internal.StringMap) -> a
     38:38:int access$500(com.google.gson.internal.StringMap) -> b
     38:38:boolean access$600(com.google.gson.internal.StringMap,java.lang.Object,java.lang.Object) -> a
-com.google.gson.internal.StringMap$1 -> bb:
-com.google.gson.internal.StringMap$EntrySet -> bc:
+com.google.gson.internal.StringMap$1 -> bc:
+com.google.gson.internal.StringMap$EntrySet -> bd:
     com.google.gson.internal.StringMap this$0 -> a
     452:452:java.util.Iterator iterator() -> iterator
     460:465:boolean contains(java.lang.Object) -> contains
     469:473:boolean remove(java.lang.Object) -> remove
     477:477:int size() -> size
     481:482:void clear() -> clear
-com.google.gson.internal.StringMap$EntrySet$1 -> bd:
+com.google.gson.internal.StringMap$EntrySet$1 -> be:
     com.google.gson.internal.StringMap$EntrySet this$1 -> a
     454:454:java.util.Map$Entry next() -> a
     452:452:java.lang.Object next() -> next
-com.google.gson.internal.StringMap$KeySet -> be:
+com.google.gson.internal.StringMap$KeySet -> bf:
     com.google.gson.internal.StringMap this$0 -> a
     402:402:java.util.Iterator iterator() -> iterator
     410:410:int size() -> size
     414:414:boolean contains(java.lang.Object) -> contains
     418:420:boolean remove(java.lang.Object) -> remove
     424:425:void clear() -> clear
-com.google.gson.internal.StringMap$KeySet$1 -> bf:
+com.google.gson.internal.StringMap$KeySet$1 -> bg:
     com.google.gson.internal.StringMap$KeySet this$1 -> a
     404:404:java.lang.String next() -> a
     402:402:java.lang.Object next() -> next
-com.google.gson.internal.StringMap$LinkedEntry -> bg:
+com.google.gson.internal.StringMap$LinkedEntry -> bh:
     java.lang.String key -> a
     java.lang.Object value -> b
     int hash -> c
@@ -5995,37 +6003,37 @@ com.google.gson.internal.StringMap$LinkedEntry -> bg:
     336:336:int hashCode() -> hashCode
     340:340:java.lang.String toString() -> toString
     287:287:java.lang.Object getKey() -> getKey
-com.google.gson.internal.StringMap$LinkedHashIterator -> bh:
+com.google.gson.internal.StringMap$LinkedHashIterator -> bi:
     com.google.gson.internal.StringMap$LinkedEntry next -> b
     com.google.gson.internal.StringMap$LinkedEntry lastReturned -> c
     com.google.gson.internal.StringMap this$0 -> d
     379:379:boolean hasNext() -> hasNext
     383:388:com.google.gson.internal.StringMap$LinkedEntry nextEntry() -> b
     392:397:void remove() -> remove
-com.google.gson.internal.StringMap$Values -> bi:
+com.google.gson.internal.StringMap$Values -> bj:
     com.google.gson.internal.StringMap this$0 -> a
     430:430:java.util.Iterator iterator() -> iterator
     438:438:int size() -> size
     442:442:boolean contains(java.lang.Object) -> contains
     446:447:void clear() -> clear
-com.google.gson.internal.StringMap$Values$1 -> bj:
+com.google.gson.internal.StringMap$Values$1 -> bk:
     com.google.gson.internal.StringMap$Values this$1 -> a
     432:432:java.lang.Object next() -> next
 com.google.gson.internal.UnsafeAllocator -> com.google.gson.internal.UnsafeAllocator:
     java.lang.Object newInstance(java.lang.Class) -> newInstance
     39:97:com.google.gson.internal.UnsafeAllocator create() -> create
-com.google.gson.internal.UnsafeAllocator$1 -> bk:
+com.google.gson.internal.UnsafeAllocator$1 -> bl:
     java.lang.reflect.Method val$allocateInstance -> a
     java.lang.Object val$unsafe -> b
     48:48:java.lang.Object newInstance(java.lang.Class) -> newInstance
-com.google.gson.internal.UnsafeAllocator$2 -> bl:
+com.google.gson.internal.UnsafeAllocator$2 -> bm:
     java.lang.reflect.Method val$newInstance -> a
     67:67:java.lang.Object newInstance(java.lang.Class) -> newInstance
-com.google.gson.internal.UnsafeAllocator$3 -> bm:
+com.google.gson.internal.UnsafeAllocator$3 -> bn:
     java.lang.reflect.Method val$newInstance -> a
     int val$constructorId -> b
     90:90:java.lang.Object newInstance(java.lang.Class) -> newInstance
-com.google.gson.internal.UnsafeAllocator$4 -> bn:
+com.google.gson.internal.UnsafeAllocator$4 -> bo:
     100:100:java.lang.Object newInstance(java.lang.Class) -> newInstance
 com.google.gson.internal.bind.ArrayTypeAdapter -> com.google.gson.internal.bind.ArrayTypeAdapter:
     com.google.gson.TypeAdapterFactory FACTORY -> FACTORY
@@ -6033,12 +6041,12 @@ com.google.gson.internal.bind.ArrayTypeAdapter -> com.google.gson.internal.bind.
     com.google.gson.TypeAdapter componentTypeAdapter -> b
     64:80:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     85:96:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.ArrayTypeAdapter$1 -> bo:
+com.google.gson.internal.bind.ArrayTypeAdapter$1 -> bp:
     42:49:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
 com.google.gson.internal.bind.CollectionTypeAdapterFactory -> com.google.gson.internal.bind.CollectionTypeAdapterFactory:
     com.google.gson.internal.ConstructorConstructor constructorConstructor -> a
     44:57:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter -> bp:
+com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter -> bq:
     com.google.gson.TypeAdapter elementTypeAdapter -> b
     com.google.gson.internal.ObjectConstructor constructor -> c
     com.google.gson.internal.bind.CollectionTypeAdapterFactory this$0 -> a
@@ -6057,7 +6065,7 @@ com.google.gson.internal.bind.DateTypeAdapter -> com.google.gson.internal.bind.D
     86:92:void write(com.google.gson.stream.JsonWriter,java.util.Date) -> write
     41:41:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     41:41:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.DateTypeAdapter$1 -> bq:
+com.google.gson.internal.bind.DateTypeAdapter$1 -> br:
     45:45:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
 com.google.gson.internal.bind.JsonTreeReader -> com.google.gson.internal.bind.JsonTreeReader:
     java.io.Reader UNREADABLE_READER -> a
@@ -6083,7 +6091,7 @@ com.google.gson.internal.bind.JsonTreeReader -> com.google.gson.internal.bind.Js
     208:213:void skipValue() -> skipValue
     216:216:java.lang.String toString() -> toString
     220:225:void promoteNameToValue() -> promoteNameToValue
-com.google.gson.internal.bind.JsonTreeReader$1 -> br:
+com.google.gson.internal.bind.JsonTreeReader$1 -> bs:
     42:42:int read(char[],int,int) -> read
     45:45:void close() -> close
 com.google.gson.internal.bind.JsonTreeWriter -> com.google.gson.internal.bind.JsonTreeWriter:
@@ -6108,7 +6116,7 @@ com.google.gson.internal.bind.JsonTreeWriter -> com.google.gson.internal.bind.Js
     176:188:com.google.gson.stream.JsonWriter value(java.lang.Number) -> value
     192:192:void flush() -> flush
     195:199:void close() -> close
-com.google.gson.internal.bind.JsonTreeWriter$1 -> bs:
+com.google.gson.internal.bind.JsonTreeWriter$1 -> bt:
     36:36:void write(char[],int,int) -> write
     39:39:void flush() -> flush
     42:42:void close() -> close
@@ -6118,7 +6126,7 @@ com.google.gson.internal.bind.MapTypeAdapterFactory -> com.google.gson.internal.
     117:134:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     141:141:com.google.gson.TypeAdapter getKeyAdapter(com.google.gson.Gson,java.lang.reflect.Type) -> a
     106:106:boolean access$000(com.google.gson.internal.bind.MapTypeAdapterFactory) -> a
-com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter -> bt:
+com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter -> bu:
     com.google.gson.TypeAdapter keyTypeAdapter -> b
     com.google.gson.TypeAdapter valueTypeAdapter -> c
     com.google.gson.internal.ObjectConstructor constructor -> d
@@ -6133,9 +6141,9 @@ com.google.gson.internal.bind.ObjectTypeAdapter -> com.google.gson.internal.bind
     com.google.gson.Gson gson -> a
     54:88:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     93:106:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.ObjectTypeAdapter$1 -> bu:
+com.google.gson.internal.bind.ObjectTypeAdapter$1 -> bv:
     40:43:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.ObjectTypeAdapter$2 -> bv:
+com.google.gson.internal.bind.ObjectTypeAdapter$2 -> bw:
     int[] $SwitchMap$com$google$gson$stream$JsonToken -> a
 com.google.gson.internal.bind.ReflectiveTypeAdapterFactory -> com.google.gson.internal.bind.ReflectiveTypeAdapterFactory:
     com.google.gson.internal.ConstructorConstructor constructorConstructor -> a
@@ -6146,7 +6154,7 @@ com.google.gson.internal.bind.ReflectiveTypeAdapterFactory -> com.google.gson.in
     65:72:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     78:81:com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField createBoundField(com.google.gson.Gson,java.lang.reflect.Field,java.lang.String,com.google.gson.reflect.TypeToken,boolean,boolean) -> a
     102:129:java.util.Map getBoundFields(com.google.gson.Gson,com.google.gson.reflect.TypeToken,java.lang.Class) -> a
-com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1 -> bw:
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1 -> bx:
     com.google.gson.TypeAdapter typeAdapter -> a
     com.google.gson.Gson val$context -> b
     com.google.gson.reflect.TypeToken val$fieldType -> c
@@ -6161,7 +6169,7 @@ com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter -> com.google
     com.google.gson.internal.bind.ReflectiveTypeAdapterFactory this$0 -> a
     157:181:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     185:202:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField -> bx:
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField -> by:
     java.lang.String name -> g
     boolean serialized -> h
     boolean deserialized -> i
@@ -6174,7 +6182,7 @@ com.google.gson.internal.bind.SqlDateTypeAdapter -> com.google.gson.internal.bin
     65:66:void write(com.google.gson.stream.JsonWriter,java.sql.Date) -> write
     38:38:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     38:38:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.SqlDateTypeAdapter$1 -> by:
+com.google.gson.internal.bind.SqlDateTypeAdapter$1 -> bz:
     42:42:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
 com.google.gson.internal.bind.TimeTypeAdapter -> com.google.gson.internal.bind.TimeTypeAdapter:
     com.google.gson.TypeAdapterFactory FACTORY -> FACTORY
@@ -6183,9 +6191,9 @@ com.google.gson.internal.bind.TimeTypeAdapter -> com.google.gson.internal.bind.T
     64:65:void write(com.google.gson.stream.JsonWriter,java.sql.Time) -> write
     40:40:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     40:40:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TimeTypeAdapter$1 -> bz:
+com.google.gson.internal.bind.TimeTypeAdapter$1 -> ca:
     44:44:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper -> ca:
+com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper -> cb:
     com.google.gson.Gson context -> a
     com.google.gson.TypeAdapter delegate -> b
     java.lang.reflect.Type type -> c
@@ -6243,166 +6251,166 @@ com.google.gson.internal.bind.TypeAdapters -> com.google.gson.internal.bind.Type
     783:783:com.google.gson.TypeAdapterFactory newFactory(java.lang.Class,java.lang.Class,com.google.gson.TypeAdapter) -> newFactory
     798:798:com.google.gson.TypeAdapterFactory newFactoryForMultipleTypes(java.lang.Class,java.lang.Class,com.google.gson.TypeAdapter) -> newFactoryForMultipleTypes
     813:813:com.google.gson.TypeAdapterFactory newTypeHierarchyFactory(java.lang.Class,com.google.gson.TypeAdapter) -> newTypeHierarchyFactory
-com.google.gson.internal.bind.TypeAdapters$1 -> cb:
+com.google.gson.internal.bind.TypeAdapters$1 -> cc:
     64:64:void write(com.google.gson.stream.JsonWriter,java.lang.Class) -> a
     69:69:java.lang.Class read(com.google.gson.stream.JsonReader) -> a
     61:61:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     61:61:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$10 -> cc:
+com.google.gson.internal.bind.TypeAdapters$10 -> cd:
     281:285:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     289:290:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     278:278:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     278:278:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$11 -> cd:
+com.google.gson.internal.bind.TypeAdapters$11 -> ce:
     296:304:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     309:310:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     293:293:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     293:293:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$12 -> ce:
+com.google.gson.internal.bind.TypeAdapters$12 -> cf:
     318:326:java.lang.Character read(com.google.gson.stream.JsonReader) -> a
     330:331:void write(com.google.gson.stream.JsonWriter,java.lang.Character) -> a
     315:315:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     315:315:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$13 -> cf:
+com.google.gson.internal.bind.TypeAdapters$13 -> cg:
     340:349:java.lang.String read(com.google.gson.stream.JsonReader) -> a
     353:354:void write(com.google.gson.stream.JsonWriter,java.lang.String) -> a
     337:337:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     337:337:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$14 -> cg:
+com.google.gson.internal.bind.TypeAdapters$14 -> ch:
     359:366:java.math.BigDecimal read(com.google.gson.stream.JsonReader) -> a
     371:372:void write(com.google.gson.stream.JsonWriter,java.math.BigDecimal) -> a
     357:357:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     357:357:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$15 -> ch:
+com.google.gson.internal.bind.TypeAdapters$15 -> ci:
     377:384:java.math.BigInteger read(com.google.gson.stream.JsonReader) -> a
     389:390:void write(com.google.gson.stream.JsonWriter,java.math.BigInteger) -> a
     375:375:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     375:375:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$16 -> ci:
+com.google.gson.internal.bind.TypeAdapters$16 -> cj:
     398:402:java.lang.StringBuilder read(com.google.gson.stream.JsonReader) -> a
     406:407:void write(com.google.gson.stream.JsonWriter,java.lang.StringBuilder) -> a
     395:395:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     395:395:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$17 -> cj:
+com.google.gson.internal.bind.TypeAdapters$17 -> ck:
     416:420:java.lang.StringBuffer read(com.google.gson.stream.JsonReader) -> a
     424:425:void write(com.google.gson.stream.JsonWriter,java.lang.StringBuffer) -> a
     413:413:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     413:413:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$18 -> ck:
+com.google.gson.internal.bind.TypeAdapters$18 -> cl:
     434:439:java.net.URL read(com.google.gson.stream.JsonReader) -> a
     443:444:void write(com.google.gson.stream.JsonWriter,java.net.URL) -> a
     431:431:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     431:431:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$19 -> cl:
+com.google.gson.internal.bind.TypeAdapters$19 -> cm:
     452:460:java.net.URI read(com.google.gson.stream.JsonReader) -> a
     465:466:void write(com.google.gson.stream.JsonWriter,java.net.URI) -> a
     449:449:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     449:449:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$2 -> cm:
+com.google.gson.internal.bind.TypeAdapters$2 -> cn:
     77:114:java.util.BitSet read(com.google.gson.stream.JsonReader) -> a
     118:129:void write(com.google.gson.stream.JsonWriter,java.util.BitSet) -> a
     75:75:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     75:75:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$20 -> cn:
+com.google.gson.internal.bind.TypeAdapters$20 -> co:
     474:479:java.net.InetAddress read(com.google.gson.stream.JsonReader) -> a
     483:484:void write(com.google.gson.stream.JsonWriter,java.net.InetAddress) -> a
     471:471:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     471:471:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$21 -> co:
+com.google.gson.internal.bind.TypeAdapters$21 -> cp:
     493:497:java.util.UUID read(com.google.gson.stream.JsonReader) -> a
     501:502:void write(com.google.gson.stream.JsonWriter,java.util.UUID) -> a
     490:490:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     490:490:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$22 -> cp:
+com.google.gson.internal.bind.TypeAdapters$22 -> cq:
     510:515:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.TypeAdapters$22$1 -> cq:
+com.google.gson.internal.bind.TypeAdapters$22$1 -> cr:
     com.google.gson.TypeAdapter val$dateTypeAdapter -> a
     com.google.gson.internal.bind.TypeAdapters$22 this$0 -> b
     517:518:java.sql.Timestamp read(com.google.gson.stream.JsonReader) -> a
     522:523:void write(com.google.gson.stream.JsonWriter,java.sql.Timestamp) -> a
     515:515:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     515:515:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$23 -> cr:
+com.google.gson.internal.bind.TypeAdapters$23 -> cs:
     538:567:java.util.Calendar read(com.google.gson.stream.JsonReader) -> a
     572:590:void write(com.google.gson.stream.JsonWriter,java.util.Calendar) -> a
     528:528:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     528:528:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$24 -> cs:
+com.google.gson.internal.bind.TypeAdapters$24 -> ct:
     599:622:java.util.Locale read(com.google.gson.stream.JsonReader) -> a
     627:628:void write(com.google.gson.stream.JsonWriter,java.util.Locale) -> a
     596:596:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     596:596:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$25 -> ct:
+com.google.gson.internal.bind.TypeAdapters$25 -> cu:
     635:667:com.google.gson.JsonElement read(com.google.gson.stream.JsonReader) -> a
     672:702:void write(com.google.gson.stream.JsonWriter,com.google.gson.JsonElement) -> a
     633:633:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     633:633:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$26 -> cu:
+com.google.gson.internal.bind.TypeAdapters$26 -> cv:
     746:753:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.TypeAdapters$27 -> cv:
+com.google.gson.internal.bind.TypeAdapters$27 -> cw:
     com.google.gson.reflect.TypeToken val$type -> a
     com.google.gson.TypeAdapter val$typeAdapter -> b
     763:763:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
-com.google.gson.internal.bind.TypeAdapters$28 -> cw:
+com.google.gson.internal.bind.TypeAdapters$28 -> cx:
     java.lang.Class val$type -> a
     com.google.gson.TypeAdapter val$typeAdapter -> b
     773:773:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     776:776:java.lang.String toString() -> toString
-com.google.gson.internal.bind.TypeAdapters$29 -> cx:
+com.google.gson.internal.bind.TypeAdapters$29 -> cy:
     java.lang.Class val$unboxed -> a
     java.lang.Class val$boxed -> b
     com.google.gson.TypeAdapter val$typeAdapter -> c
     786:787:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     790:790:java.lang.String toString() -> toString
-com.google.gson.internal.bind.TypeAdapters$3 -> cy:
+com.google.gson.internal.bind.TypeAdapters$3 -> cz:
     137:144:java.lang.Boolean read(com.google.gson.stream.JsonReader) -> a
     148:153:void write(com.google.gson.stream.JsonWriter,java.lang.Boolean) -> a
     134:134:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     134:134:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$30 -> cz:
+com.google.gson.internal.bind.TypeAdapters$30 -> da:
     java.lang.Class val$base -> a
     java.lang.Class val$sub -> b
     com.google.gson.TypeAdapter val$typeAdapter -> c
     801:802:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     805:805:java.lang.String toString() -> toString
-com.google.gson.internal.bind.TypeAdapters$31 -> da:
+com.google.gson.internal.bind.TypeAdapters$31 -> db:
     java.lang.Class val$clazz -> a
     com.google.gson.TypeAdapter val$typeAdapter -> b
     816:816:com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> create
     819:819:java.lang.String toString() -> toString
-com.google.gson.internal.bind.TypeAdapters$32 -> db:
+com.google.gson.internal.bind.TypeAdapters$32 -> dc:
     int[] $SwitchMap$com$google$gson$stream$JsonToken -> a
-com.google.gson.internal.bind.TypeAdapters$4 -> dc:
+com.google.gson.internal.bind.TypeAdapters$4 -> dd:
     162:166:java.lang.Boolean read(com.google.gson.stream.JsonReader) -> a
     170:171:void write(com.google.gson.stream.JsonWriter,java.lang.Boolean) -> a
     160:160:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     160:160:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$5 -> dd:
+com.google.gson.internal.bind.TypeAdapters$5 -> de:
     180:188:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     193:194:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     177:177:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     177:177:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$6 -> de:
+com.google.gson.internal.bind.TypeAdapters$6 -> df:
     203:210:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     215:216:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     200:200:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     200:200:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$7 -> df:
+com.google.gson.internal.bind.TypeAdapters$7 -> dg:
     225:232:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     237:238:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     222:222:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     222:222:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$8 -> dg:
+com.google.gson.internal.bind.TypeAdapters$8 -> dh:
     247:254:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     259:260:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     244:244:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     244:244:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$9 -> dh:
+com.google.gson.internal.bind.TypeAdapters$9 -> di:
     266:270:java.lang.Number read(com.google.gson.stream.JsonReader) -> a
     274:275:void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
     263:263:java.lang.Object read(com.google.gson.stream.JsonReader) -> read
     263:263:void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> write
-com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter -> di:
+com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter -> dj:
     java.util.Map nameToConstant -> a
     java.util.Map constantToName -> b
     728:732:java.lang.Enum read(com.google.gson.stream.JsonReader) -> a
@@ -6494,9 +6502,9 @@ com.google.gson.stream.JsonReader -> com.google.gson.stream.JsonReader:
     190:190:java.lang.String access$400(com.google.gson.stream.JsonReader) -> d
     190:190:java.lang.String access$402(com.google.gson.stream.JsonReader,java.lang.String) -> b
     190:190:com.google.gson.stream.JsonToken access$002(com.google.gson.stream.JsonReader,com.google.gson.stream.JsonToken) -> a
-com.google.gson.stream.JsonReader$1 -> dj:
+com.google.gson.stream.JsonReader$1 -> dk:
     1317:1329:void promoteNameToValue(com.google.gson.stream.JsonReader) -> promoteNameToValue
-com.google.gson.stream.JsonReader$2 -> dk:
+com.google.gson.stream.JsonReader$2 -> dl:
     int[] $SwitchMap$com$google$gson$stream$JsonScope -> a
 com.google.gson.stream.JsonScope -> com.google.gson.stream.JsonScope:
     com.google.gson.stream.JsonScope EMPTY_ARRAY -> EMPTY_ARRAY
@@ -6564,11 +6572,11 @@ com.google.gson.stream.JsonWriter -> com.google.gson.stream.JsonWriter:
     550:558:void newline() -> c
     565:573:void beforeName() -> d
     585:618:void beforeValue(boolean) -> a
-com.google.gson.stream.JsonWriter$1 -> dl:
+com.google.gson.stream.JsonWriter$1 -> dm:
     int[] $SwitchMap$com$google$gson$stream$JsonScope -> a
 com.google.gson.stream.MalformedJsonException -> com.google.gson.stream.MalformedJsonException:
     long serialVersionUID -> serialVersionUID
-com.google.gson.stream.StringPool -> dm:
+com.google.gson.stream.StringPool -> dn:
     java.lang.String[] pool -> a
     33:58:java.lang.String get(char[],int,int) -> a
 com.googlecode.leptonica.android.AdaptiveMap -> com.googlecode.leptonica.android.AdaptiveMap:
@@ -9779,8 +9787,8 @@ org.jsoup.UnsupportedMimeTypeException -> org.jsoup.UnsupportedMimeTypeException
 org.jsoup.examples.HtmlToPlainText -> org.jsoup.examples.HtmlToPlainText:
     26:35:void main(java.lang.String[]) -> main
     43:47:java.lang.String getPlainText(org.jsoup.nodes.Element) -> getPlainText
-org.jsoup.examples.HtmlToPlainText$1 -> dn:
-org.jsoup.examples.HtmlToPlainText$FormattingVisitor -> do:
+org.jsoup.examples.HtmlToPlainText$1 -> do:
+org.jsoup.examples.HtmlToPlainText$FormattingVisitor -> dp:
     int width -> b
     java.lang.StringBuilder accum -> c
     org.jsoup.examples.HtmlToPlainText this$0 -> a
@@ -9806,8 +9814,8 @@ org.jsoup.helper.DescendableLinkedList -> org.jsoup.helper.DescendableLinkedList
     32:32:java.lang.Object peekLast() -> peekLast
     40:40:java.lang.Object pollLast() -> pollLast
     48:48:java.util.Iterator descendingIterator() -> descendingIterator
-org.jsoup.helper.DescendableLinkedList$1 -> dp:
-org.jsoup.helper.DescendableLinkedList$DescendingIterator -> dq:
+org.jsoup.helper.DescendableLinkedList$1 -> dq:
+org.jsoup.helper.DescendableLinkedList$DescendingIterator -> dr:
     java.util.ListIterator iter -> b
     org.jsoup.helper.DescendableLinkedList this$0 -> a
     64:64:boolean hasNext() -> hasNext
@@ -9842,8 +9850,8 @@ org.jsoup.helper.HttpConnection -> org.jsoup.helper.HttpConnection:
     173:174:org.jsoup.Connection request(org.jsoup.Connection$Request) -> request
     178:178:org.jsoup.Connection$Response response() -> response
     182:183:org.jsoup.Connection response(org.jsoup.Connection$Response) -> response
-org.jsoup.helper.HttpConnection$1 -> dr:
-org.jsoup.helper.HttpConnection$Base -> ds:
+org.jsoup.helper.HttpConnection$1 -> ds:
+org.jsoup.helper.HttpConnection$Base -> dt:
     java.net.URL url -> a
     org.jsoup.Connection$Method method -> b
     java.util.Map headers -> c
@@ -10329,7 +10337,7 @@ org.jsoup.nodes.XmlDeclaration -> org.jsoup.nodes.XmlDeclaration:
     36:41:void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
     43:43:void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
     46:46:java.lang.String toString() -> toString
-org.jsoup.parser.CharacterReader -> dt:
+org.jsoup.parser.CharacterReader -> du:
     char[] input -> a
     int length -> b
     int pos -> c
@@ -10362,7 +10370,7 @@ org.jsoup.parser.CharacterReader -> dt:
     265:269:boolean matchConsumeIgnoreCase(java.lang.String) -> e
     275:277:boolean containsIgnoreCase(java.lang.String) -> f
     282:282:java.lang.String toString() -> toString
-org.jsoup.parser.HtmlTreeBuilder -> du:
+org.jsoup.parser.HtmlTreeBuilder -> dv:
     org.jsoup.parser.HtmlTreeBuilderState state -> d
     org.jsoup.parser.HtmlTreeBuilderState originalState -> e
     boolean baseUriSetFromDoc -> f
@@ -10524,7 +10532,7 @@ org.jsoup.parser.HtmlTreeBuilderState$22 -> org.jsoup.parser.HtmlTreeBuilderStat
     1431:1443:boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
 org.jsoup.parser.HtmlTreeBuilderState$23 -> org.jsoup.parser.HtmlTreeBuilderState$23:
     1448:1448:boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
-org.jsoup.parser.HtmlTreeBuilderState$24 -> dv:
+org.jsoup.parser.HtmlTreeBuilderState$24 -> dw:
     int[] $SwitchMap$org$jsoup$parser$Token$TokenType -> a
 org.jsoup.parser.HtmlTreeBuilderState$3 -> org.jsoup.parser.HtmlTreeBuilderState$3:
     68:91:boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
@@ -10622,17 +10630,17 @@ org.jsoup.parser.Token -> org.jsoup.parser.Token:
     256:256:boolean isCharacter() -> j
     260:260:org.jsoup.parser.Token$Character asCharacter() -> k
     264:264:boolean isEOF() -> l
-org.jsoup.parser.Token$1 -> dw:
-org.jsoup.parser.Token$Character -> dx:
+org.jsoup.parser.Token$1 -> dx:
+org.jsoup.parser.Token$Character -> dy:
     java.lang.String data -> b
     208:208:java.lang.String getData() -> m
     213:213:java.lang.String toString() -> toString
-org.jsoup.parser.Token$Comment -> dy:
+org.jsoup.parser.Token$Comment -> dz:
     java.lang.StringBuilder data -> b
     boolean bogus -> c
     190:190:java.lang.String getData() -> m
     195:195:java.lang.String toString() -> toString
-org.jsoup.parser.Token$Doctype -> dz:
+org.jsoup.parser.Token$Doctype -> ea:
     java.lang.StringBuilder name -> b
     java.lang.StringBuilder publicIdentifier -> c
     java.lang.StringBuilder systemIdentifier -> d
@@ -10641,12 +10649,12 @@ org.jsoup.parser.Token$Doctype -> dz:
     35:35:java.lang.String getPublicIdentifier() -> n
     39:39:java.lang.String getSystemIdentifier() -> o
     43:43:boolean isForceQuirks() -> p
-org.jsoup.parser.Token$EOF -> ea:
-org.jsoup.parser.Token$EndTag -> eb:
+org.jsoup.parser.Token$EOF -> eb:
+org.jsoup.parser.Token$EndTag -> ec:
     177:177:java.lang.String toString() -> toString
-org.jsoup.parser.Token$StartTag -> ec:
+org.jsoup.parser.Token$StartTag -> ed:
     157:160:java.lang.String toString() -> toString
-org.jsoup.parser.Token$Tag -> ed:
+org.jsoup.parser.Token$Tag -> ee:
     java.lang.String tagName -> b
     java.lang.String pendingAttributeName -> e
     java.lang.StringBuilder pendingAttributeValue -> f
@@ -10710,7 +10718,7 @@ org.jsoup.parser.TokenQueue -> org.jsoup.parser.TokenQueue:
     371:375:java.lang.String consumeAttributeKey() -> consumeAttributeKey
     383:387:java.lang.String remainder() -> remainder
     391:391:java.lang.String toString() -> toString
-org.jsoup.parser.Tokeniser -> ee:
+org.jsoup.parser.Tokeniser -> ef:
     org.jsoup.parser.CharacterReader reader -> e
     org.jsoup.parser.ParseErrorList errors -> f
     org.jsoup.parser.TokeniserState state -> g
@@ -10961,7 +10969,7 @@ org.jsoup.parser.TokeniserState$8 -> org.jsoup.parser.TokeniserState$8:
     140:161:void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
 org.jsoup.parser.TokeniserState$9 -> org.jsoup.parser.TokeniserState$9:
     165:179:void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
-org.jsoup.parser.TreeBuilder -> ef:
+org.jsoup.parser.TreeBuilder -> eg:
     org.jsoup.parser.CharacterReader reader -> b
     org.jsoup.parser.Tokeniser tokeniser -> c
     org.jsoup.nodes.Document doc -> doc
@@ -10984,7 +10992,7 @@ org.jsoup.parser.XmlTreeBuilder -> org.jsoup.parser.XmlTreeBuilder:
     84:86:void insert(org.jsoup.parser.Token$Doctype) -> a
     95:119:void popStackToClose(org.jsoup.parser.Token$EndTag) -> a
     122:124:java.util.List parseFragment(java.lang.String,java.lang.String,org.jsoup.parser.ParseErrorList) -> b
-org.jsoup.parser.XmlTreeBuilder$1 -> eg:
+org.jsoup.parser.XmlTreeBuilder$1 -> eh:
     int[] $SwitchMap$org$jsoup$parser$Token$TokenType -> a
 org.jsoup.safety.Cleaner -> org.jsoup.safety.Cleaner:
     org.jsoup.safety.Whitelist whitelist -> a
@@ -10994,8 +11002,8 @@ org.jsoup.safety.Cleaner -> org.jsoup.safety.Cleaner:
     120:135:org.jsoup.safety.Cleaner$ElementMeta createSafeElement(org.jsoup.nodes.Element) -> a
     23:23:org.jsoup.safety.Whitelist access$000(org.jsoup.safety.Cleaner) -> a
     23:23:org.jsoup.safety.Cleaner$ElementMeta access$100(org.jsoup.safety.Cleaner,org.jsoup.nodes.Element) -> a
-org.jsoup.safety.Cleaner$1 -> eh:
-org.jsoup.safety.Cleaner$CleaningVisitor -> ei:
+org.jsoup.safety.Cleaner$1 -> ei:
+org.jsoup.safety.Cleaner$CleaningVisitor -> ej:
     int numDiscarded -> b
     org.jsoup.nodes.Element root -> c
     org.jsoup.nodes.Element destination -> d
@@ -11003,7 +11011,7 @@ org.jsoup.safety.Cleaner$CleaningVisitor -> ei:
     83:103:void head(org.jsoup.nodes.Node,int) -> head
     106:109:void tail(org.jsoup.nodes.Node,int) -> tail
     72:72:int access$300(org.jsoup.safety.Cleaner$CleaningVisitor) -> a
-org.jsoup.safety.Cleaner$ElementMeta -> ej:
+org.jsoup.safety.Cleaner$ElementMeta -> ek:
     org.jsoup.nodes.Element el -> a
     int numAttribsDiscarded -> b
 org.jsoup.safety.Whitelist -> org.jsoup.safety.Whitelist:
@@ -11026,35 +11034,35 @@ org.jsoup.safety.Whitelist -> org.jsoup.safety.Whitelist:
     339:354:boolean isSafeAttribute(java.lang.String,org.jsoup.nodes.Element,org.jsoup.nodes.Attribute) -> a
     360:372:boolean testValidProtocol(org.jsoup.nodes.Element,org.jsoup.nodes.Attribute,java.util.Set) -> a
     376:384:org.jsoup.nodes.Attributes getEnforcedAttributes(java.lang.String) -> a
-org.jsoup.safety.Whitelist$AttributeKey -> ek:
+org.jsoup.safety.Whitelist$AttributeKey -> el:
     405:405:org.jsoup.safety.Whitelist$AttributeKey valueOf(java.lang.String) -> a
-org.jsoup.safety.Whitelist$AttributeValue -> el:
+org.jsoup.safety.Whitelist$AttributeValue -> em:
     415:415:org.jsoup.safety.Whitelist$AttributeValue valueOf(java.lang.String) -> a
-org.jsoup.safety.Whitelist$Protocol -> em:
+org.jsoup.safety.Whitelist$Protocol -> en:
     425:425:org.jsoup.safety.Whitelist$Protocol valueOf(java.lang.String) -> a
-org.jsoup.safety.Whitelist$TagName -> en:
+org.jsoup.safety.Whitelist$TagName -> eo:
     395:395:org.jsoup.safety.Whitelist$TagName valueOf(java.lang.String) -> a
-org.jsoup.safety.Whitelist$TypedValue -> eo:
+org.jsoup.safety.Whitelist$TypedValue -> ep:
     java.lang.String value -> a
     439:442:int hashCode() -> hashCode
     447:454:boolean equals(java.lang.Object) -> equals
     459:459:java.lang.String toString() -> toString
 org.jsoup.select.Collector -> org.jsoup.select.Collector:
     23:25:org.jsoup.select.Elements collect(org.jsoup.select.Evaluator,org.jsoup.nodes.Element) -> collect
-org.jsoup.select.Collector$Accumulator -> ep:
+org.jsoup.select.Collector$Accumulator -> eq:
     org.jsoup.nodes.Element root -> a
     org.jsoup.select.Elements elements -> b
     org.jsoup.select.Evaluator eval -> c
     40:45:void head(org.jsoup.nodes.Node,int) -> head
     49:49:void tail(org.jsoup.nodes.Node,int) -> tail
-org.jsoup.select.CombiningEvaluator -> eq:
+org.jsoup.select.CombiningEvaluator -> er:
     java.util.List evaluators -> a
     28:28:org.jsoup.select.Evaluator rightMostEvaluator() -> a
     32:33:void replaceRightMostEvaluator(org.jsoup.select.Evaluator) -> a
-org.jsoup.select.CombiningEvaluator$And -> er:
+org.jsoup.select.CombiningEvaluator$And -> es:
     46:51:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     56:56:java.lang.String toString() -> toString
-org.jsoup.select.CombiningEvaluator$Or -> es:
+org.jsoup.select.CombiningEvaluator$Or -> et:
     78:79:void add(org.jsoup.select.Evaluator) -> b
     83:88:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     93:93:java.lang.String toString() -> toString
@@ -11247,7 +11255,7 @@ org.jsoup.select.NodeTraversor -> org.jsoup.select.NodeTraversor:
 org.jsoup.select.NodeVisitor -> org.jsoup.select.NodeVisitor:
     void head(org.jsoup.nodes.Node,int) -> head
     void tail(org.jsoup.nodes.Node,int) -> tail
-org.jsoup.select.QueryParser -> et:
+org.jsoup.select.QueryParser -> eu:
     java.lang.String[] combinators -> a
     org.jsoup.parser.TokenQueue tq -> b
     java.lang.String query -> c
@@ -11281,25 +11289,25 @@ org.jsoup.select.Selector -> org.jsoup.select.Selector:
     115:115:org.jsoup.select.Elements select() -> a
     120:132:org.jsoup.select.Elements filterOut(java.util.Collection,java.util.Collection) -> a
 org.jsoup.select.Selector$SelectorParseException -> org.jsoup.select.Selector$SelectorParseException:
-org.jsoup.select.StructuralEvaluator -> eu:
+org.jsoup.select.StructuralEvaluator -> ev:
     org.jsoup.select.Evaluator evaluator -> a
-org.jsoup.select.StructuralEvaluator$Has -> ev:
+org.jsoup.select.StructuralEvaluator$Has -> ew:
     23:27:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     31:31:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$ImmediateParent -> ew:
+org.jsoup.select.StructuralEvaluator$ImmediateParent -> ex:
     78:82:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     86:86:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling -> ex:
+org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling -> ey:
     121:125:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     129:129:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$Not -> ey:
+org.jsoup.select.StructuralEvaluator$Not -> ez:
     41:41:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     45:45:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$Parent -> ez:
+org.jsoup.select.StructuralEvaluator$Parent -> fa:
     55:64:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     68:68:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$PreviousSibling -> fa:
+org.jsoup.select.StructuralEvaluator$PreviousSibling -> fb:
     96:107:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
     111:111:java.lang.String toString() -> toString
-org.jsoup.select.StructuralEvaluator$Root -> fb:
+org.jsoup.select.StructuralEvaluator$Root -> fc:
     13:13:boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches

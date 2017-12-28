@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import com.g0v.campaignfinance.controller.CampaignFinanceController;
 import com.g0v.campaignfinance.controller.OcrController;
 import com.g0v.campaignfinance.model.Cell;
 import com.g0v.campaignfinance.model.CellCount;
+import com.g0v.campaignfinance1.R;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -43,6 +45,7 @@ public class MainActivity extends Activity
 	private TextView linkToFanPageTextView;
 	private ArrayAdapter<String> quickInputItemArrayAdapter;
 	private MenuItem shareMenuItem;
+	private MenuItem openPrivacyPolicyMenuItem;
 
 	private MediaPlayer coinSound;
 	private MediaPlayer kickSound;
@@ -211,6 +214,18 @@ public class MainActivity extends Activity
 				sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
 				sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, body);
 				startActivity(Intent.createChooser(sharingIntent, getString(R.string.share_chooser_title)));
+				return true;
+			}
+		});
+
+		openPrivacyPolicyMenuItem = menu.findItem(R.id.openPrivacyPolicyMenuItem);
+		openPrivacyPolicyMenuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener()
+		{
+			@Override
+			public boolean onMenuItemClick(MenuItem item)
+			{
+				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_privacy_policy)));
+				startActivity(browserIntent);
 				return true;
 			}
 		});

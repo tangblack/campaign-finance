@@ -13,6 +13,7 @@ import android.view.Window;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.g0v.campaignfinance.controller.CampaignFinanceController;
+import com.g0v.campaignfinance1.R;
 
 import java.io.IOException;
 import java.util.HashMap;
